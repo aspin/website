@@ -68,6 +68,7 @@ img {
 	left: 2.5%;
 	top: 4%;
 	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	 -webkit-transform: translate3d(0,0,0);
 	filter: url(shadow.svg#drop-shadow);
 	font-family: eraser;
 }
