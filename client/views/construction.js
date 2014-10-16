@@ -9,10 +9,11 @@ Template.construction.events({
 			borderLeftWidth: "200px",
 			borderRightWidth: "200px",
 			borderBottomWidth: "400px",
-			marginLeft: "13%",
+			marginLeft: "19%",
 			marginTop: "7%",
 		});
 		$("#consText").animate({
+			top: "320px",
 			left: "",
 			fontSize: "30px"
 		})
@@ -27,14 +28,14 @@ Template.construction.events({
 			left: "2.5%"
 		});
 		$(".brown-triangle-1").animate({
-			borderLeftWidth: "120",
-			borderRightWidth: "120px",
-			borderBottomWidth: "250px",
+			borderLeftWidth: "140px",
+			borderRightWidth: "140px",
+			borderBottomWidth: "280px",
 			marginLeft: "47%",
 			marginTop: "23%",
 		});
 		$("#consText").animate({
-			left: "120px",
+			left: "135px",
 			fontSize: "18px"
 		});
 		$("#consText").html("It's still under <br/> construction...");

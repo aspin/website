@@ -9,16 +9,16 @@ body {
 }
 
 .contact-bar {
-	width: 58px;
+	width: 78px;
 	position: absolute;
 	left: 85%;
 	top: 30%;
 }
 
 img {
-	margin: 5px;
-	width: 48px;
-	height: 48px;
+	margin: 7px;
+	width: 64px;
+	height: 64px;
 }
 
 .blue-circle-1 {
@@ -26,8 +26,8 @@ img {
 	border-radius: 50%;
 	-moz-border-radius: 50%;
 	-webkit-border-radius: 50%;
-	width: 250px;
-	height: 250px;
+	width: 280px;
+	height: 280px;
 	margin-left: 11%;
 	margin-top: 35%;
 	position: absolute;
@@ -37,8 +37,8 @@ img {
 
 .red-square-1 {
 	background-color: #B33817;
-	width: 220px;
-	height: 220px;
+	width: 245px;
+	height: 245px;
 	position: absolute;
 	margin-left: 29%;
 	margin-top: 5%;
@@ -50,9 +50,9 @@ img {
 .brown-triangle-1 {
 	width: 0;
 	height: 0;
-	border-left: 120px solid transparent;
-	border-right: 120px solid transparent;
-	border-bottom: 250px solid #797B80;
+	border-left: 140px solid transparent;
+	border-right: 140px solid transparent;
+	border-bottom: 280px solid #797B80;
 	position: absolute;
 	z-index: -41;
 	margin-left: 47%;
@@ -79,7 +79,7 @@ img {
 
 #consText {
 	position: relative;
-	top: 290px;
-	left: 120px;
+	top: 350px;
+	left: 135px;
 	text-align: center;
 }
