@@ -1,0 +1,85 @@
+@font-face {
+	font-family: eraser;
+	src: url("/fonts/EraserDust.ttf");
+}
+
+body {
+	background-color: #EFEEF5;
+	color: #EEFEEF;
+}
+
+.contact-bar {
+	width: 58px;
+	position: absolute;
+	left: 85%;
+	top: 30%;
+}
+
+img {
+	margin: 5px;
+	width: 48px;
+	height: 48px;
+}
+
+.blue-circle-1 {
+	background-color: #046380;
+	border-radius: 50%;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	width: 250px;
+	height: 250px;
+	margin-left: 11%;
+	margin-top: 35%;
+	position: absolute;
+	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	filter: url(shadow.svg#drop-shadow);
+}
+
+.red-square-1 {
+	background-color: #B33817;
+	width: 220px;
+	height: 220px;
+	position: absolute;
+	margin-left: 29%;
+	margin-top: 5%;
+	z-index: -53;
+	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	filter: url(shadow.svg#drop-shadow);
+}
+
+.brown-triangle-1 {
+	width: 0;
+	height: 0;
+	border-left: 120px solid transparent;
+	border-right: 120px solid transparent;
+	border-bottom: 250px solid #797B80;
+	position: absolute;
+	z-index: -41;
+	margin-left: 47%;
+	margin-top: 23%;
+	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	filter: url(shadow.svg#drop-shadow);
+}
+
+#links {
+	background-color: #002F2F;
+	width: 300px;
+	height: 90%;
+	position: absolute;
+	left: 2.5%;
+	top: 4%;
+	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
+	filter: url(shadow.svg#drop-shadow);
+	font-family: eraser;
+}
+
+.construction {
+	margin-left: 20px;
+}
+
+#consText {
+	position: relative;
+	top: 290px;
+	left: 120px;
+	text-align: center;
+}
