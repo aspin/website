@@ -13,9 +13,10 @@ Template.construction.events({
 			marginTop: "7%",
 		});
 		$("#consText").animate({
-			top: "320px",
-			left: "",
-			fontSize: "30px"
+			top: "230px",
+			fontSize: "30px",
+			width: "200px",
+			left: "-95px"
 		})
 		$("#consText").html("It's still under <br/> construction! :)");
 		$("#consText").addClass("refresh");
@@ -35,9 +36,10 @@ Template.construction.events({
 			marginTop: "23%",
 		});
 		$("#consText").animate({
-			top: "350px",
-			left: "135px",
-			fontSize: "18px",
+			top: "150px",
+			left: "-73px",
+			fontSize: "23px",
+			width: "140px"
 		});
 		$("#consText").html("It's still under <br/> construction...");
 		$("#consText").removeClass("refresh");

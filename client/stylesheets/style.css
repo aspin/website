@@ -8,13 +8,6 @@ body {
 	color: #EEFEEF;
 }
 
-.contact-bar {
-	width: 78px;
-	position: absolute;
-	left: 85%;
-	top: 30%;
-}
-
 img {
 	margin: 7px;
 	width: 64px;
@@ -61,6 +54,13 @@ img {
 	filter: url(shadow.svg#drop-shadow);
 }
 
+.contact-bar {
+	width: 78px;
+	position: absolute;
+	left: 85%;
+	top: 30%;
+}
+
 #links {
 	background-color: #002F2F;
 	width: 300px;
@@ -79,7 +79,9 @@ img {
 
 #consText {
 	position: relative;
-	top: 350px;
-	left: 135px;
+	top: 150px;
+	left: -73px;
+	font-size: 23px;
+	width: 140px;
 	text-align: center;
 }
