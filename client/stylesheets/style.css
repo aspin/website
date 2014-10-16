@@ -75,6 +75,8 @@ img {
 
 .construction {
 	margin-left: 20px;
+	color: #EEFEEF;
+	display: inline;
 }
 
 #consText {
@@ -84,4 +86,9 @@ img {
 	font-size: 23px;
 	width: 140px;
 	text-align: center;
+}
+
+.construction:hover {
+	font-style: underline;
+	border-bottom: 2px solid #EEFEEF;;
 }

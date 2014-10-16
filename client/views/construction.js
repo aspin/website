@@ -46,3 +46,7 @@ Template.construction.events({
 		$(".brown-triangle-1").addClass("refresh");
 	}
 });
+
+Template.construction.rendered = function () {
+	$("#links").draggable();	
+};
