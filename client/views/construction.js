@@ -35,8 +35,9 @@ Template.construction.events({
 			marginTop: "23%",
 		});
 		$("#consText").animate({
+			top: "350px",
 			left: "135px",
-			fontSize: "18px"
+			fontSize: "18px",
 		});
 		$("#consText").html("It's still under <br/> construction...");
 		$("#consText").removeClass("refresh");
