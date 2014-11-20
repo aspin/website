@@ -14,6 +14,20 @@ img {
 	height: 64px;
 }
 
+a:hover {
+  font-style: underline;
+  color: #EEFEEF;
+}
+
+a:visited {
+  font-style: underline;
+  color: #EEFEEF;
+}
+
+a:link {
+  color: #EEFEEF;
+}
+
 .blue-circle-1 {
 	background-color: #046380;
 	border-radius: 50%;
@@ -71,24 +85,21 @@ img {
 	 -webkit-transform: translate3d(0,0,0);
 	filter: url(shadow.svg#drop-shadow);
 	font-family: eraser;
-}
-
-.construction {
-	margin-left: 20px;
-	color: #EEFEEF;
-	display: inline;
+  padding-left: 10px;
+  padding-right: 10px;
+  text-align: center;
 }
 
 #consText {
-	position: relative;
-	top: 150px;
-	left: -73px;
-	font-size: 23px;
-	width: 140px;
-	text-align: center;
+  position: relative;
+  top: 150px;
+  left: -73px;
+  font-size: 23px;
+  width: 140px;
+  text-align: center;
 }
 
-.construction:hover {
-	font-style: underline;
-	border-bottom: 2px solid #EEFEEF;;
+#real-link:hover {
+  font-style: underline;
+  border-bottom: 2px solid #EEFEEF;
 }
