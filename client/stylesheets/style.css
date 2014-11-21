@@ -27,8 +27,19 @@ body, html {
 }
 
 a {
-  color: #0089FF;
+  color: #3d3536;
   text-decoration: none;
+}
+
+p {
+  font-size: 1.4em;
+  font-weight: 500;
+  /*text-align: center;*/
+}
+
+p a:hover {
+  color: #3d3536;
+  text-decoration: underline;
 }
 
 /* -------------------------------- 
@@ -39,7 +50,7 @@ Modules - reusable parts of our design
 .cd-container {
   /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
   width: 90%;
-  max-width: 768px;
+  max-width: 640px;
   margin: 0 auto;
 }
 .cd-container::after {
@@ -51,7 +62,7 @@ Modules - reusable parts of our design
 
 /* -------------------------------- 
 
-Main components 
+              NAVBAR
 
 -------------------------------- */
 .cd-header {
@@ -59,27 +70,44 @@ Main components
   top: 0;
   left: 0;
   width: 100%;
-  height: 50px;
-  background-color: #3d3536;
-  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  height: 30px;
+  padding: 20px 0px;
   z-index: 2;
-  opacity: 0.95;
+
+  -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+  transition: background .5s ease-in-out, padding .5s ease-in-out;
 }
+
 .cd-header:after {
   content: "";
   display: table;
   clear: both;
 }
+
+.cd-header-active {
+  padding: 0px;
+  background-color: #3d3536;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  opacity: 0.95;
+}
+
 .cd-header #cd-logo {
   float: left;
   margin: 13px 0 0 5%;
 }
+
 .cd-header #cd-logo img {
-  display: block;
+  display: none;
 }
+
+.cd-main-nav li:hover {
+  background-color: rgba(255,255,255,.2);
+}
+
 @media only screen and (min-width: 768px) {
   .cd-header {
-    height: 70px;
+    height: 60px;
   }
   .cd-header #cd-logo {
     margin: 23px 0 0 5%;
@@ -115,12 +143,13 @@ Main components
 }
 .cd-main-nav a {
   display: block;
-  height: 50px;
-  line-height: 50px;
+  height: 60px;
+  line-height: 60px;
   padding-left: 5%;
   background: #2f292a;
   border-top: 1px solid #453c3d;
   color: white;
+  vertical-align: middle;
 }
 @media only screen and (min-width: 768px) {
   .cd-main-nav {
@@ -137,7 +166,7 @@ Main components
     -ms-transform: translateY(0);
     -o-transform: translateY(0);
     transform: translateY(0);
-    line-height: 70px;
+    line-height: 60px;
   }
   .cd-main-nav ul.is-visible {
     -webkit-transform: translateY(0);
@@ -155,16 +184,26 @@ Main components
     height: auto;
     line-height: normal;
     background: transparent;
-    padding: .6em 1em;
+    padding: 0em 1em;
     border-top: none;
-    color: swhite;
-    font-size: 14px;
-    font-size: 0.875rem;
+    color: white;
+    font-size: 1.5em;
+    font-weight: 600;
+    /*font-size: 14px;*/
+    /*font-size: 0.875rem;*/
   }
+
   .no-touch .cd-main-nav a:hover {
-    color: #0089FF;
+    /*color: #0089FF;*/
+    text-decoration: none;
   }
 }
+
+/* -------------------------------- 
+
+          MAIN CONTENT
+
+-------------------------------- */
 
 .cd-main-content {
   /* you need to assign a min-height to the main content so that the children can inherit it*/
@@ -268,7 +307,7 @@ Main components
   color: white;
 }
 .cd-scrolling-bg.cd-color-2 {
-  background-color: #235ec8;
+  background-color: #D14F3A;
   /*color: #3d3536;*/
   color: white;
 }
@@ -286,99 +325,3 @@ Main components
     font-weight: 300;
   }
 }
-
-
-/*@font-face {
-	font-family: eraser;
-	src: url("/fonts/EraserDust.ttf");
-}
-
-body {
-	background-color: #EFEEF5;
-	color: #EEFEEF;
-}
-
-img {
-	margin: 7px;
-	width: 64px;
-	height: 64px;
-}
-
-.blue-circle-1 {
-	background-color: #046380;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	width: 280px;
-	height: 280px;
-	margin-left: 11%;
-	margin-top: 35%;
-	position: absolute;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
-}
-
-.red-square-1 {
-	background-color: #B33817;
-	width: 245px;
-	height: 245px;
-	position: absolute;
-	margin-left: 29%;
-	margin-top: 5%;
-	z-index: -53;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
-}
-
-.brown-triangle-1 {
-	width: 0;
-	height: 0;
-	border-left: 140px solid transparent;
-	border-right: 140px solid transparent;
-	border-bottom: 280px solid #797B80;
-	position: absolute;
-	z-index: -41;
-	margin-left: 47%;
-	margin-top: 23%;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
-}
-
-.contact-bar {
-	width: 78px;
-	position: absolute;
-	left: 85%;
-	top: 30%;
-}
-
-#links {
-	background-color: #002F2F;
-	width: 300px;
-	position: absolute;
-	left: 2.5%;
-	top: 4%;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	 -webkit-transform: translate3d(0,0,0);
-	filter: url(shadow.svg#drop-shadow);
-	font-family: eraser;
-}
-
-.construction {
-	margin-left: 20px;
-	color: #EEFEEF;
-	display: inline;
-}
-
-#consText {
-	position: relative;
-	top: 150px;
-	left: -73px;
-	font-size: 23px;
-	width: 140px;
-	text-align: center;
-}
-
-.construction:hover {
-	font-style: underline;
-	border-bottom: 2px solid #EEFEEF;;
-}*/
