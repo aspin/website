@@ -1,105 +1,168 @@
 @font-face {
-	font-family: eraser;
-	src: url("/fonts/EraserDust.ttf");
+  font-family: 'icomoon';
+  src:url('fonts/icomoon.eot');
+  src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+    url('fonts/icomoon.svg#icomoon') format('svg'),
+    url('fonts/icomoon.woff') format('woff'),
+    url('fonts/icomoon.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* -------------------------------- 
+Primary style
+-------------------------------- */
+html * {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+*, *:after, *:before {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-	background-color: #EFEEF5;
-	color: #EEFEEF;
+  font-size: 100%;
+  font-family: "Roboto", sans-serif;
+  color: #3d3536;
+  background-color: black;
 }
+
+body, html {
+  /* important */
+  height: 100%;
+}
+
+a {
+  color: #3d3536;
+  text-decoration: none;
+}
+
+p {
+  font-size: 1.4em;
+  font-weight: 500;
+  /*text-align: center;*/
+}
+
+p a:hover {
+  color: #3d3536;
+  text-decoration: underline;
+}
+
+/* -------------------------------- 
+Modules - reusable parts of our design
+-------------------------------- */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: 90%;
+  margin: 0 auto;
+}
+
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+          MAIN CONTENT
+-------------------------------- */
+
+.cd-main-content {
+  /* you need to assign a min-height to the main content so that the children can inherit it*/
+  height: 100%;
+  position: relative;
+  z-index: 1;
+}
+
+.cd-fixed-bg {
+  position: relative;
+  min-height: 100%;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  z-index: 1;
+}
+
+.cd-fixed-bg h1 {
+  position: absolute;
+  left: 50%;
+  top: 45%;
+  bottom: auto;
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font: Montserrat,"Helvetica Neue", Helvetica;
+  font-size: 30px;
+  font-size: 1.875rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.cd-fixed-bg h2 {
+  position: absolute;
+  left: 50%;
+  top: 60%;
+  /*bottom: auto;*/
+  right: auto;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  -moz-transform: translateX(-50%) translateY(-50%);
+  -ms-transform: translateX(-50%) translateY(-50%);
+  -o-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  width: 90%;
+  max-width: 1170px;
+  text-align: center;
+  font: Montserrat,"Helvetica Neue", Helvetica;
+  font-size: 25px;
+  font-size: 1.875rem;
+  font-weight: 300;
+  text-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  color: white;
+}
+
+.cd-fixed-bg.cd-bg-1 {
+  background-image: url("imgs/chicago-night.jpg");
+}
+
+@media only screen and (min-width: 768px) {
+  .cd-fixed-bg h1, .cd-fixed-bg h2 {
+    font-size: 36px;
+  }
+}
+@media only screen and (min-width: 1170px) {
+  .cd-fixed-bg {
+    background-attachment: fixed;
+  }
+  .cd-fixed-bg h1{
+    font-size: 48px;
+    font-weight: 600;
+  }
+}
+
+/* ABOUT */
 
 img {
-	margin: 7px;
-	width: 64px;
-	height: 64px;
-}
-
-a:hover {
-  font-style: underline;
-  color: #EEFEEF;
-}
-
-a:visited {
-  font-style: underline;
-  color: #EEFEEF;
-}
-
-a:link {
-  color: #EEFEEF;
-}
-
-.blue-circle-1 {
-	background-color: #046380;
-	border-radius: 50%;
-	-moz-border-radius: 50%;
-	-webkit-border-radius: 50%;
-	width: 280px;
-	height: 280px;
-	margin-left: 11%;
-	margin-top: 35%;
-	position: absolute;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
-}
-
-.red-square-1 {
-	background-color: #B33817;
-	width: 245px;
-	height: 245px;
-	position: absolute;
-	margin-left: 29%;
-	margin-top: 5%;
-	z-index: -53;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
-}
-
-.brown-triangle-1 {
-	width: 0;
-	height: 0;
-	border-left: 140px solid transparent;
-	border-right: 140px solid transparent;
-	border-bottom: 280px solid #797B80;
-	position: absolute;
-	z-index: -41;
-	margin-left: 47%;
-	margin-top: 23%;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	filter: url(shadow.svg#drop-shadow);
+    margin: 7px;
+    width: 64px;
+    height: 64px;
 }
 
 .contact-bar {
-	width: 78px;
-	position: absolute;
-	left: 85%;
-	top: 30%;
-}
-
-#links {
-	background-color: #002F2F;
-	width: 300px;
-	position: absolute;
-	left: 2.5%;
-	top: 4%;
-	 -webkit-filter: drop-shadow(12px 12px 7px rgba(0,0,0,0.5));
-	 -webkit-transform: translate3d(0,0,0);
-	filter: url(shadow.svg#drop-shadow);
-	font-family: eraser;
-  padding-left: 10px;
-  padding-right: 10px;
-  text-align: center;
-}
-
-#consText {
-  position: relative;
-  top: 150px;
-  left: -73px;
-  font-size: 23px;
-  width: 140px;
-  text-align: center;
-}
-
-#real-link:hover {
-  font-style: underline;
-  border-bottom: 2px solid #EEFEEF;
+    z-index: 10000;
+    width: 78px;
+    position: absolute;
+    left: 85%;
+    top: 30%;
 }
