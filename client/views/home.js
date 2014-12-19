@@ -1,6 +1,6 @@
 Template.home.rendered = function () {
-    // $("body").css("display", "none");
-    // $("body").fadeIn(2000);
+    $("body").css("display", "none");
+    $("body").fadeIn(2000);
 
     $(window).scroll(function() {
         if ($(".cd-header").offset().top > 50) {
