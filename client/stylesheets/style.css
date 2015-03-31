@@ -480,24 +480,6 @@ Modules - reusable parts of our design
   color: #333;
 }
 
-.st-wrapper .st-item {
-  position: absolute;
-  background-color: white;
-  height: 420px;
-  width: 700px;
-  /*width: 1040px;*/
-  -webkit-transform-style : preserve-3d;
-  -moz-transform-style : preserve-3d;
-  -o-transform-style : preserve-3d;
-  -ms-transform-style : preserve-3d;
-  transform-style : preserve-3d;
-  -webkit-backface-visibility: hidden;
-  -moz-backface-visibility: hidden;
-  -o-backface-visibility: hidden;
-  -ms-backface-visibility: hidden;
-  backface-visibility: hidden;
-}
-
 .st-wrapper .st-item.st-center {
   -webkit-transform: rotateZ(0deg) rotateY(0deg);
   -moz-transform: rotateZ(0deg) rotateY(0deg);
@@ -612,23 +594,6 @@ Modules - reusable parts of our design
   .st-wrapper {
     height: 300px;
   }
-}
-
-.st-item img {
-  margin-top: 10px;
-  margin-left: 10px;
-  height: 400px;
-  width: 300px;
-}
-
-.st-item span {
-  line-height: 24px;
-  text-align: center;
-  color: #3d3536;
-  position: relative;
-  font-size: 24px;
-  left: 2%;
-  top: -35%;
 }
 
 #st-stack-nav {
