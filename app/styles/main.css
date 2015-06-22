@@ -1,0 +1,239 @@
+/*  GENERAL STYLES  */
+
+body {
+  font-family: "Roboto", "Open Sans", sans-serif;
+  color: #ffffff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+a {
+  color: #ffffff;
+}
+
+a:hover {
+  color: #ffffff;
+}
+
+h1 {
+  line-height: 100vh;
+  text-align: center;
+  font-size: 3.0rem;
+  font-weight: 800;
+}
+
+h2 {
+  line-height: 30vh;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+p {
+  font-size: 1.5rem;
+  margin-bottom: 40px;
+}
+
+/*  NAV STYLES  */
+
+.navigation {
+  position: absolute;
+  bottom: 0px;
+  z-index: 3;
+  width: 100%;
+  background-color: rgba(3, 13, 24, 0.96);
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
+
+.navigation nav, .navigation ul, .navigation li, .navigation a {
+  height: 100%;
+}
+.navigation ul {
+  position: static;
+  visibility: visible;
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+  transform: scale(1);
+  text-align: center;
+  background-color: transparent;
+}
+.navigation li {
+  display: inline-block;
+  margin-left: -4px;
+}
+.navigation li a {
+  color: rgba(240, 238, 225, 0.3);
+  font-size: 1.2rem;
+  position: relative;
+  text-align: center;
+  display: block;
+  padding: 2rem 2rem 2rem 2rem;
+  border-bottom: none;
+  -webkit-transition: padding 0.2s;
+  -moz-transition: padding 0.2s;
+  transition: padding 0.2s;
+}
+
+.navigation li a:hover, .navigation li a:focus {
+  color: #f0eee1;
+  text-decoration: none;
+}
+
+/*header {
+  position: relative;
+  width: 100%;
+  padding: 20px 0;
+}
+
+header nav {
+  min-height: 50px;
+}
+
+header li {
+  display: inline-block;
+}*/
+
+/*  SECTION STYLES  */
+
+section {
+  min-height: 100vh;
+}
+
+.cover {
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*  SECTION-SPECIFIC STYLES  */
+
+#head {
+  background-image: url(../images/chicago-night.jpg);
+}
+
+#about {
+  background-color: #0858EE;
+}
+
+#projects {
+  background-color: #EE3A1C;
+}
+
+#skills {
+  background-color: #0858EE;
+}
+
+#experience {
+  background-color: #EE3A1C;
+}
+
+#contact {
+  background-color: #0858EE;
+}
+
+/*  PROJECT STACK STYLING  */
+
+.projects-container {
+  width: 100%;
+}
+
+.project {
+  margin: 0px auto;
+  height: 420px;
+  width: 700px;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.project img {
+  width: 100%;
+  height: 100%;
+}
+
+.project:hover .project-overlay .project-more {
+  opacity: 0.9;
+}
+
+.project-overlay {
+  top: -423px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.6);
+  text-align: center;
+  -webkit-transition: background-color .15s;
+  -moz-transition: background-color .15s;
+  -o-transition: background-color .15s;
+  transition: background-color .15s;
+  border-radius: 2px;
+}
+
+.project-overlay h3 {
+  position: relative;
+  top: 170px;
+  font-size: 2.2rem;
+  font-weight: 600;
+}
+
+.project-overlay p {
+  position: relative;
+  top: 170px;
+  font-size: 1.4rem;
+}
+
+.project-overlay em {
+  position: relative;
+  top: 160px;
+  font-size: 1.1rem;
+}
+
+.project-more {
+  position: relative;
+  top: 180px;
+  border: 1px solid rgba(255,255,255,.6);
+  font-size: 1.1rem;
+  width: 140px;
+  margin: 0 auto;
+  opacity: 0;
+  cursor: pointer;
+  -webkit-transition: opacity .3s;
+  -moz-transition: opacity .3s;
+  -o-transition: opacity .3s;
+  transition: opacity .3s;
+}
+
+/*  SKILLS DISPLAY  */
+
+.skills-display {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.skills-display li {
+  margin: 12px;
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  overflow: hidden;
+  background-color: white;
+}
+
+.skills-display img {
+  width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
