@@ -2,7 +2,7 @@ var navigation = $('.navigation');
 var offset = navigation.offset().top;
 
 $(window).on('scroll', function() {
-    if($(window).scrollTop() > offset) {
+    if($(window).scrollTop() > offset + 20) {
         navigation.addClass('become-header');
     }
     else {
@@ -28,8 +28,18 @@ $(window).on('scroll', function() {
 $('.navigation').find('a').on('click', function(event) {
     event.preventDefault();
     var target= $(this.hash);
-    $('body, html').animate({
+    $('body, html').stop().animate({
         'scrollTop': target.offset().top
-        }, 400
+        }, 1500, 'easeInOutExpo'
     ); 
+});
+
+$('.project-overlay').click(function(event) {
+    $(event.currentTarget).css('top', '-420px');
+    $(event.currentTarget).siblings('img').css('top', '-420px');
+});
+
+$('.project-details').click(function(event) {
+    $(event.currentTarget).siblings('.project-overlay').css('top', '0px');
+    $(event.currentTarget).siblings('img').css('top', '0px');
 });
