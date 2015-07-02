@@ -1,3 +1,5 @@
+'use strict';
+
 var navigation = $('.navigation');
 var offset = navigation.offset().top;
 
