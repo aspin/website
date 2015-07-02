@@ -1,7 +1,18 @@
+/*  FONT IMPORTS  */
+@font-face {
+  font-family: "Alegreya Sans";
+  src: url(../fonts/AlegreyaSans-Regular.otf);
+}
+
+@font-face {
+  font-family: "Alegreya Sans SC";
+  src: url(../fonts/AlegreyaSansSC-Medium.otf);
+}
+
 /*  GENERAL STYLES  */
 
 body {
-  font-family: "Roboto", "Open Sans", sans-serif;
+  font-family: "Alegreya Sans", "Roboto", "Open Sans", sans-serif;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -16,6 +27,7 @@ a:hover {
 }
 
 h1 {
+  font-family: "Alegreya Sans SC";
   position: absolute;
   margin: auto;
   top: 45%;
@@ -28,9 +40,14 @@ h1 {
 }
 
 h2 {
+  font-family: "Alegreya Sans SC";
   text-align: center;
   font-size: 2.5rem;
   margin-bottom: 0.8em;
+}
+
+h3 {
+  font-size: 1.7em;
 }
 
 h4 {
@@ -42,74 +59,82 @@ h5 {
   font-size: 1.1em;
 }
 
-
+.white-outlined-test {
+  color: white;
+  text-shadow:
+  -1px -1px 0 #000,
+  1px -1px 0 #000,
+  -1px 1px 0 #000,
+  1px 1px 0 #000;
+}
 
 /*  NAV STYLES  */
 
-  .navigation {
-    position: absolute;
-    bottom: 0px;
-    z-index: 4;
-    width: 100%;
-    background-color: rgba(3, 13, 24, 0.96);
-    -webkit-transition: height 0.3s;
-    -moz-transition: height 0.3s;
-    transition: height 0.3s;
-  }
+.navigation {
+  position: absolute;
+  bottom: 0px;
+  z-index: 4;
+  width: 100%;
+  background-color: rgba(3, 13, 24, 0.96);
+  -webkit-transition: height 0.3s;
+  -moz-transition: height 0.3s;
+  transition: height 0.3s;
+}
 
-  .navigation nav, .navigation ul, .navigation li, .navigation a {
-    height: 100%;
-  }
+.navigation nav, .navigation ul, .navigation li, .navigation a {
+  height: 100%;
+}
 
-  .navigation ul {
-    position: static;
-    text-align: center;
-    background-color: transparent;
-  }
+.navigation ul {
+  position: static;
+  text-align: center;
+  background-color: transparent;
+}
 
-  .navigation li {
-    display: inline-block;
-    margin-left: -4px;
-  }
+.navigation li {
+  display: inline-block;
+  margin-left: -4px;
+}
 
-  .navigation li a {
-    color: rgba(240, 238, 225, 0.3);
-    font-size: 1rem;
-    font-weight: 500;
-    position: relative;
-    text-align: center;
-    display: block;
-    padding: 3.7rem 2.5rem 1rem 2.5rem;
-    border-bottom: none;
-    -webkit-transition: padding 0.3s;
-    -moz-transition: padding 0.3s;
-    transition: padding 0.3s;
-  }
+.navigation li a {
+  color: rgba(240, 238, 225, 0.3);
+  font-size: 1rem;
+  font-weight: 500;
+  position: relative;
+  text-align: center;
+  display: block;
+  padding: 3.7rem 2.5rem 1rem 2.5rem;
+  border-bottom: none;
+  -webkit-transition: padding 0.3s;
+  -moz-transition: padding 0.3s;
+  transition: padding 0.3s;
+}
 
-  .navigation li a.active {
-    color: #f0eee1;
-  }
+.navigation li a.active {
+  color: #f0eee1;
+}
 
 
-  /* refactor px */
-  .navigation li img {
-    height: 40px;
-    width: 40px;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: 12px auto 0 auto;
-    -webkit-transition: opacity 0.2s;
-    -moz-transition: opacity 0.2s;
-    transition: opacity 0.2s;
-  }
+/* refactor px */
+.navigation li img {
+  height: 40px;
+  width: 40px;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 12px auto 0 auto;
+  -webkit-transition: opacity 0.2s;
+  -moz-transition: opacity 0.2s;
+  transition: opacity 0.2s;
+}
 
-  .navigation li a:hover, .navigation li a:focus {
-    color: #f0eee1;
-    text-decoration: none;
-  }
+.navigation li a:hover, .navigation li a:focus {
+  color: #f0eee1;
+  text-decoration: none;
+}
+
 
 /*  After Scroll  */
 
@@ -169,14 +194,22 @@ section:after {
 }
 
 #contact {
-  background-color: #0858EE;
+  background-image: url(../images/la-bokeh.jpg);
 }
 
 /*  ABOUT ME STYLING  */
 
 #about p {
-  font-size: 1.5rem;
-  margin-bottom: 40px;
+  font-size: 1.35em;
+  margin-bottom: 1em;
+}
+
+#about img {
+  display: block;
+  height: 200px;
+  width: 200px;
+  margin: 0 auto 2em auto;
+  border-radius: 100px;
 }
 
 /*  PROJECT STACK STYLING  */
@@ -284,7 +317,7 @@ section:after {
 .skills-display li {
   margin: 12px;
   display: inline-block;
-  width: 200px;
+  width: 200px; /* set % for consistency */
   height: 200px;
   overflow: hidden;
   background-color: white;
@@ -334,8 +367,19 @@ section:after {
   font-size: 0.9em;
 }
 
+/*  CONTACT STYLES  */
+#contact img {
+  height: 5em;
+  width: 5em;
+  margin-left: 1em;
+  margin-right: 1em;
+}
 
-
+.centered {
+  width: 60%;
+  margin: 5em auto;
+  text-align: center;
+}
 
 
 

@@ -22,7 +22,6 @@ $(window).on('scroll', function() {
             actualAnchor.removeClass('active');
         }
     });
-
 });
 
 $('.navigation').find('a').on('click', function(event) {
