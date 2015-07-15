@@ -195,6 +195,8 @@ section:after {
 
 #contact {
   background-image: url(../images/backgrounds/sunset2.png);
+  position: relative;
+  padding-top: 15%;
 }
 
 /*  ABOUT ME STYLING  */
@@ -457,7 +459,13 @@ li.project-wrapper {
   text-align: center;
 }
 
-
-
+/*  FOOTER */
+footer {
+  color: #ffffff;
+  width: 100%;
+  min-height: 50px;
+  position: absolute;
+  bottom: 0;
+}
 
 
