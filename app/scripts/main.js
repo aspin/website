@@ -16,7 +16,6 @@ $(window).on('scroll', function() {
         var actual = $(this),
             actualHeight = actual.height() + parseInt(actual.css('paddingTop').replace('px', '')) + parseInt(actual.css('paddingBottom').replace('px', '')),
             actualAnchor = navigation.find('a[href="#' + actual.attr('id') + '"]');
-        console.log(actualHeight);
         if ( ( actual.offset().top - navigation.height() <= $(window).scrollTop() ) && ( actual.offset().top +  actualHeight - navigation.height() > $(window).scrollTop() ) ) {
             actualAnchor.addClass('active');
         }
@@ -36,8 +35,8 @@ $('.navigation').find('a').on('click', function(event) {
 });
 
 $('.project-overlay').click(function(event) {
-    $(event.currentTarget).css('top', '-420px');
-    $(event.currentTarget).siblings('img').css('top', '-420px');
+    $(event.currentTarget).css('top', '-100%');
+    $(event.currentTarget).siblings('img').css('top', '-100%');
 });
 
 $('.project-details').click(function(event) {
