@@ -1,12 +1,12 @@
 /*  FONT IMPORTS  */
 @font-face {
   font-family: "Alegreya Sans";
-  src: url(../fonts/AlegreyaSans-Regular.otf);
+  src: url(fonts/AlegreyaSans-Regular.otf);
 }
 
 @font-face {
   font-family: "Alegreya Sans SC";
-  src: url(../fonts/AlegreyaSansSC-Medium.otf);
+  src: url(fonts/AlegreyaSansSC-Medium.otf);
 }
 
 /*  GENERAL STYLES  */
