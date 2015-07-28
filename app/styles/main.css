@@ -215,16 +215,17 @@ section:after {
 }
 
 #about {
-  background-color: #212121;
+  background-color: #456B74;
   padding: 5em 0.4em;
 }
 
 #projects {
-  background-color: #484848;
+  background-color: #212121;
 }
 
 #skills {
-  background-color: #C8C8C8;
+  /*background-color: #C8C8C8;*/
+  background-color: #484848;
 }
 
 #experience {
