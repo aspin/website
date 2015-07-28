@@ -1,4 +1,6 @@
 /*  FONT IMPORTS  */
+@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
+
 @font-face {
   font-family: "Alegreya Sans";
   src: url(fonts/AlegreyaSans-Regular.otf);
@@ -9,13 +11,27 @@
   src: url(fonts/AlegreyaSansSC-Medium.otf);
 }
 
+@font-face {
+  font-family: "Aller";
+  src: url(fonts/Aller_Rg.ttf);
+}
+
+@font-face {
+  font-family: "Aller Light";
+  src: url(fonts/Aller_Lt.ttf);
+}
+
 /*  GENERAL STYLES  */
 
 body {
-  font-family: "Alegreya Sans", "Roboto", "Open Sans", sans-serif;
+  font-family: "Lato", "Roboto", "Open Sans", sans-serif;
   color: #ffffff;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  display: none;
 }
 
 a {
@@ -26,23 +42,35 @@ a:hover {
   color: #ffffff;
 }
 
-h1 {
-  font-family: "Alegreya Sans SC";
-  position: absolute;
-  margin: auto;
-  top: 45%;
-  left: 0;
-  right: 0;
+p a {
+  text-decoration: underline;
+}
 
+h3 a {
+  text-decoration: underline;
+}
+
+h5 a {
+  text-decoration: underline;
+}
+
+p {
+  font-weight: 300;
+}
+
+h1 {
+  font-family: "Aller";
   text-align: center;
   font-size: 3.0rem;
   font-weight: 800;
+  margin-bottom: 0.5em;
 }
 
 h2 {
-  font-family: "Alegreya Sans SC";
+  font-family: "Aller";
   text-align: center;
-  font-size: 2.5rem;
+  /*font-size: 2.5rem;*/ /* @media big? */
+  font-size: 2.4em;
   margin-bottom: 0.8em;
 }
 
@@ -68,9 +96,18 @@ h5 {
   1px 1px 0 #000;
 }
 
+.vertical-center {
+  display: flex;
+}
+
+.vertical-center > div {
+  margin: auto;
+}
+
 /*  NAV STYLES  */
 
 .navigation {
+  font-family: "Aller";
   position: absolute;
   bottom: 0px;
   z-index: 4;
@@ -178,25 +215,25 @@ section:after {
 }
 
 #about {
-  background-color: #0858EE;
+  background-color: #212121;
+  padding: 5em 0.4em;
 }
 
 #projects {
-  background-color: #EE3A1C;
+  background-color: #484848;
 }
 
 #skills {
-  background-color: #0858EE;
+  background-color: #C8C8C8;
 }
 
 #experience {
-  background-color: #EE3A1C;
+  background-color: #D19292;
 }
 
 #contact {
   background-image: url(../images/backgrounds/sunset2.png);
   position: relative;
-  padding-top: 15%;
 }
 
 /*  ABOUT ME STYLING  */
@@ -214,28 +251,37 @@ section:after {
   border-radius: 100px;
 }
 
+#about hr {
+  /*margin: 7em 0;*/ /* @media big? */
+  margin: 2em 0;
+}
+
 /*  PROJECT STACK STYLING  */
 
 #projects-container {
-  margin: 0 auto;
-  width: 70%;
+  width: 80%;
   overflow: hidden;
   position: relative;
-  height: 450px;
+}
+
+#projects-container  h2 {
+  /*margin-bottom: 2em;*/ /* @media big? */
+  margin-bottom: 1em;
 }
 
 .no-scroll-wrapper {
-  position: absolute;
-  top: 0;
-  bottom: -15px;
-  left: 0;
-  right: 0;
   overflow: auto;
+  margin-bottom: 3em;
 }
 
 ul.project-wrapper-list {
-  width: 3800px;
+  width: 4550px;
 }
+
+ul.project-wrapper-list::-webkit-scrollbar {
+  display: none;
+}
+
 
 li.project-wrapper {
   display: inline-block;
@@ -286,11 +332,13 @@ li.project-wrapper {
 
 .project-overlay h3 {
   font-size: 2.2rem;
-  font-weight: 600;
+  font-weight: 500;
+  margin-bottom: 0.3em;
 }
 
 .project-overlay p {
   font-size: 1.4rem;
+  margin-bottom: 0.5em;
 }
 
 .project-overlay em {
@@ -301,7 +349,7 @@ li.project-wrapper {
   border: 1px solid rgba(255,255,255,.6);
   font-size: 1.1rem;
   width: 140px;
-  margin: 10px auto 0 auto;
+  margin: 25px auto 0 auto;
   opacity: 0;
   cursor: pointer;
   -webkit-transition: opacity .3s;
@@ -328,6 +376,7 @@ li.project-wrapper {
   display: inline-block;
   width: 49%;
   margin-right: 1%;
+  vertical-align: middle;
 }
 
 .project-details figure {
@@ -365,6 +414,7 @@ li.project-wrapper {
   margin-left: 1%;
   width: 49%;
   display: inline-block;
+  vertical-align: middle;
 }
 
 /* lol */
@@ -379,8 +429,16 @@ li.project-wrapper {
 
 /*  SKILLS DISPLAY  */
 
+#skills h2 {
+  /*margin-top: 1.5em;*/ /* @media big? */
+}
+
+#skills h2.second {
+  margin-top: 1.2em;
+}
+
 .skills-display {
-  width: 80%;
+  width: 100%;
   margin: 0 auto;
 }
 
@@ -412,6 +470,7 @@ li.project-wrapper {
 }
 
 .an-experience {
+  /*width: 45%;*/ /* big? */
   width: 60%;
   margin: 2em auto;
 }
@@ -442,7 +501,7 @@ li.project-wrapper {
 }
 
 .an-experience p {
-  font-size: 0.9em;
+  font-size: 1.1em;
 }
 
 /*  CONTACT STYLES  */
@@ -461,11 +520,11 @@ li.project-wrapper {
 
 /*  FOOTER */
 footer {
+  background-color: black;
   color: #ffffff;
   width: 100%;
   min-height: 50px;
-  position: absolute;
-  bottom: 0;
+  margin-top: -50px;
+  position: relative
+  clear: both;
 }
-
-
