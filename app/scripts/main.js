@@ -35,8 +35,9 @@ $navigation.find('a').on('click', function(event) {
 });
 
 $('.navigation-trigger').on('click', function(event) {
+  event.preventDefault();
   $('.navigation ul').toggleClass('is-visible');
-})
+});
 
 $('.project-overlay').click(function(event) {
     $(event.currentTarget).css('top', '-100%');

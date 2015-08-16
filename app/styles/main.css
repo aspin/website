@@ -1,16 +1,4 @@
 /*  FONT IMPORTS  */
-@import url(http://fonts.googleapis.com/css?family=Lato:300,400);
-
-@font-face {
-  font-family: "Alegreya Sans";
-  src: url(fonts/AlegreyaSans-Regular.otf);
-}
-
-@font-face {
-  font-family: "Alegreya Sans SC";
-  src: url(fonts/AlegreyaSansSC-Medium.otf);
-}
-
 @font-face {
   font-family: "Aller";
   src: url(fonts/Aller_Rg.ttf);
@@ -87,8 +75,10 @@ h5 {
   font-size: 1.1em;
 }
 
-.mobile-show {
-  display: none;
+@media screen and (min-width: 501px) {
+  .mobile-show {
+    display: none !important;
+  }
 }
 
 @media screen and (max-width: 500px) {
@@ -682,7 +672,7 @@ li.project-wrapper {
 
 @media screen and (max-width: 500px) {
   #contact .col-md-6 {
-    padding-top: 2em;
+    padding-top: 9em;
   }
 }
 
