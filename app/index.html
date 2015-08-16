@@ -51,7 +51,7 @@
 
     <section class="cover vertical-center" id="about">
       <div class="col-md-8 col-md-offset-4 text-center">
-        <hr>
+        <hr class="mobile-hide">
         <img src="images/me.jpg">
         <h2>I'M A DEVELOPER, DESIGNER, AND SOCIAL SCIENTIST.</h2>
         <p>
@@ -63,12 +63,12 @@
         <p>
           In my spare time, I play piano, guitar, and boulder. Most recently, I've also been diving into music composition and painting.
         </p>
-        <hr>
+        <hr class="mobile-hide">
       </div>
     </section>
 
     <section class="cover vertical-center" id="projects">
-      <div id="projects-container">
+      <div id="projects-container" class="mobile-hide">
         <h2>HERE'S A BIT ABOUT THE PROJECTS I'VE WORKED ON...</h2>
         <div class="no-scroll-wrapper">
           <ul class="project-wrapper-list">
@@ -276,6 +276,10 @@
         </div>
         <h5 class="text-center">(You can also checkout <a href="/resume.pdf">my resume in PDF format</a>.)</h3>
       </div>
+
+      <div class="mobile-show vertical-center">
+        <h2>I haven't reaaally figured out how to make this section responsive yet, so just check out <a href="/resume.pdf">my resume</a> in the meantime. <br><br> Or you know, visit the site not on your phone!</h2>
+      </div>
     </section>
 
     <section class="cover vertical-center" id="skills">
@@ -317,59 +321,61 @@
       </div>
     </section>
     <section class="cover" id="experience">
-      <h2>HERE'S A TIMELINE OF WHAT I'VE BEEN UP TO:</h2>
+      <div class="col-md-8 col-md-offset-2 text-center">
+        <h2>HERE'S A BIT ABOUT WHAT I'VE BEEN UP TO:</h2>
 
-      <div class="an-experience">
-        <img src="images/experience/indiegogo.png">
-        <div class="xp-description">
-          <h4>Software Engineer / KPCB Fellow</h4>
-          <h5>Indiegogo | Summer 2015 | San Francisco, CA</h5>
-          <p>I'm currently working as a full-stack developer intern at Indiegogo, with an emphasis on iOS development. Unlike typical internships, I'm not given a specific project, but instead work as a full member of a scrum team. So far, I've done work in payments, written behavior driven tests, researched mobile frameworks, with more to come. </p>
+        <div class="an-experience">
+          <img src="images/experience/indiegogo.png">
+          <div class="xp-description">
+            <h4>Software Engineer / KPCB Fellow</h4>
+            <h5>Indiegogo <span>|</span> Summer 2015 <span>|</span> San Francisco, CA</h5>
+            <p class="mobile-hide">I'm currently working as a full-stack developer intern at Indiegogo, with an emphasis on iOS development. Unlike typical internships, I'm not given a specific project, but instead work as a full member of a scrum team. So far, I've done work in payments, written behavior driven tests, researched mobile frameworks, with more to come. </p>
+          </div>
         </div>
-      </div>
 
-      <div class="an-experience">
-        <img src="images/experience/delta.png">
-        <div class="xp-description">
-          <h4>Researcher</h4>
-          <h5>Delta Lab | March 2014 - Present | Evanston, IL</h5>
-          <p>Delta Lab is my primary commitment during the school year. I'm constantly involved in either [designing, developing, doing, conducting, writing] research [projects, applications, studies, papers], and so on. I've hacked on Glass, ran user studies, transcribed hours worth of my own interviews (incredibly tiring), and flown to South Korea to talk about my projects. I anticipate staying with Delta Lab and working with my advisor, <a href="https://haoqizhang.com">Haoqi Zhang</a>, until graduation.</p>
+        <div class="an-experience">
+          <img src="images/experience/delta.png">
+          <div class="xp-description">
+            <h4>Researcher</h4>
+            <h5>Delta Lab <span>|</span> March 2014 - Present <span>|</span> Evanston, IL</h5>
+            <p class="mobile-hide">Delta Lab is my primary commitment during the school year. I'm constantly involved in either [designing, developing, doing, conducting, writing] research [projects, applications, studies, papers], and so on. I've hacked on Glass, ran user studies, transcribed hours worth of my own interviews (incredibly tiring), and flown to South Korea to talk about my projects. I anticipate staying with Delta Lab and working with my advisor, <a href="https://haoqizhang.com">Haoqi Zhang</a>, until graduation.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="an-experience">
-        <img src="images/experience/speakamos.png">
-        <div class="xp-description">
-          <h4>Freelance Developer</h4>
-          <h5>Speakamos | Jan 2015 - May 2015 | Evanston, IL</h5>
-          <p>I worked as a freelance developer creating Speakamos (for project details, see above). My responsibilities here included designing and developing the website and regularly meeting with project stakeholders about any changes in direction or features requests.</p>
+        <div class="an-experience">
+          <img src="images/experience/speakamos.png">
+          <div class="xp-description">
+            <h4>Freelance Developer</h4>
+            <h5>Speakamos <span>|</span> Jan 2015 - May 2015 <span>|</span> Evanston, IL</h5>
+            <p class="mobile-hide">I worked as a freelance developer creating Speakamos (for project details, see above). My responsibilities here included designing and developing the website and regularly meeting with project stakeholders about any changes in direction or features requests.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="an-experience">
-        <img src="images/experience/northwestern2.png">
-        <div class="xp-description">
-          <h4>Teaching Assistant</h4>
-          <h5>Northwestern University | Sept 2014 - Present | Evanston, IL</h5>
-          <p>I've ran discussion sections, held office hours, and graded exams for EECS 348: Artifical Intelligence and EECS 336: Design &amp; Analysis of Algorithms at Northwestern University. I have generally enjoyed being a TA.</p>
+        <div class="an-experience">
+          <img src="images/experience/northwestern2.png">
+          <div class="xp-description">
+            <h4>Teaching Assistant</h4>
+            <h5>Northwestern University <span>|</span> Sept 2014 - Present <span>|</span> Evanston, IL</h5>
+            <p class="mobile-hide">I've ran discussion sections, held office hours, and graded exams for EECS 348: Artifical Intelligence and EECS 336: Design &amp; Analysis of Algorithms at Northwestern University. I have generally enjoyed being a TA.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="an-experience">
-        <img src="images/experience/epic.png">
-        <div class="xp-description">
-          <h4>Software Developer</h4>
-          <h5>Epic | Summer 2014 | Madison, WI</h5>
-          <p>I spent this summer working to creating and iterating on a pharmacy kiosk application. My work involved developing in C# and XAML, interfacing with multiple medical records service, and automating allergy and insurance checks.</p>
+        <div class="an-experience">
+          <img src="images/experience/epic.png">
+          <div class="xp-description">
+            <h4>Software Developer</h4>
+            <h5>Epic <span>|</span> Summer 2014 <span>|</span> Madison, WI</h5>
+            <p class="mobile-hide">I spent this summer working to creating and iterating on a pharmacy kiosk application. My work involved developing in C# and XAML, interfacing with multiple medical records service, and automating allergy and insurance checks.</p>
+          </div>
         </div>
-      </div>
 
-      <div class="an-experience">
-        <img src="images/experience/nuit.png">
-        <div class="xp-description">
-          <h4>Consultant</h4>
-          <h5>Northwestern University Information Technology | Oct 2012 - Dec 2014 | Evanston, IL</h5>
-          <p>I work as a tech consultant as part Northwestern University's IT team. I acted as directory assistance, triaged tickets, helped with network management and access, fixed laptops (e.g. virus extermination and OS reinstalls), and reset forgotten passwords.</p>
+        <div class="an-experience">
+          <img src="images/experience/nuit.png">
+          <div class="xp-description">
+            <h4>Consultant</h4>
+            <h5>Northwestern University Information Technology <span>|</span> Oct 2012 - Dec 2|14 <span>|</span> Evanston, IL</h5>
+            <p class="mobile-hide">I work as a tech consultant as part Northwestern University's IT team. I acted as directory assistance, triaged tickets, helped with network management and access, fixed laptops (e.g. virus extermination and OS reinstalls), and reset forgotten passwords.</p>
+          </div>
         </div>
       </div>
 
@@ -381,7 +387,7 @@
       </div>
     </section>
     <footer>
-      <div class="col-md-10 text-center col-md-offset-1">
+      <div class="col-md-10 text-center col-md-offset-1 mobile-hide">
         <p>The entirety of this website (unminfied, slightly documented) is <a href="https://github.com/aspin/website">open-sourced on Github.</a> Take a look there for my list of inspirations in creating this site.</p>
         <p>Feel free to do whatever you want with this code, though please don't like, carbon copy everything for yourself. That'd be pretty silly.</p>
       </div>

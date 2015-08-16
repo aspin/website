@@ -87,9 +87,30 @@ h5 {
   font-size: 1.1em;
 }
 
+.mobile-show {
+  display: none;
+}
+
 @media screen and (max-width: 500px) {
   h2 {
     font-size: 1.5em;
+  }
+
+  h3 {
+    font-size: 1.1em;
+  }
+
+  .mobile-hide {
+    display: none;
+  }
+
+  .mobile-show {
+    display: block;
+    padding: 0 1em;
+  }
+
+  .mobile-show a {
+    text-decoration: underline;
   }
 }
 
@@ -295,7 +316,7 @@ section > div {
 
 @media screen and (max-width: 500px) {
   section {
-    padding: 2em 0.2em; 
+    padding: 2em 0.2em;
   }
 }
 
@@ -350,9 +371,14 @@ section > div {
 }
 
 @media screen and (max-width: 500px) {
-  #about p {
-    font-size: 0.9em;
+  #about {
+    padding: 2em 0.2em;
   }
+
+  #about p {
+    font-size: 1em;
+  }
+
 }
 
 /*  PROJECT STACK STYLING  */
@@ -528,10 +554,6 @@ li.project-wrapper {
 
 /*  SKILLS DISPLAY  */
 
-#skills h2 {
-  /*margin-top: 1.5em;*/ /* @media big? */
-}
-
 #skills h2.second {
   margin-top: 1.2em;
 }
@@ -539,6 +561,7 @@ li.project-wrapper {
 .skills-display {
   width: 100%;
   margin: 0 auto;
+  text-align: center;
 }
 
 .skills-display li {
@@ -549,6 +572,20 @@ li.project-wrapper {
   height: 150px;
   overflow: hidden;
   background-color: #4c3333;
+}
+
+@media screen and (max-width: 350px) {
+  .skills-display li {
+    width: 125px;
+    height: 125px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .skills-display li {
+    margin: 0.4em;
+  }
+
 }
 
 .skills-display li div {
@@ -569,8 +606,7 @@ li.project-wrapper {
 }
 
 .an-experience {
-  /*width: 45%;*/ /* big? */
-  width: 60%;
+  text-align: left;
   margin: 2em auto;
 }
 
@@ -595,12 +631,39 @@ li.project-wrapper {
   margin-top: 0.7em;
 }
 
+.an-experience h4 {
+  margin-bottom: 0.2em;
+}
+
 .an-experience h5 {
   margin-bottom: 0.3em;
 }
 
 .an-experience p {
   font-size: 1.1em;
+}
+
+@media screen and (max-width: 500px) {
+  .an-experience {
+    width: 100%;
+    text-align: center;
+  }
+
+  .an-experience img {
+    float: initial;
+    margin: 0 auto;
+  }
+
+  .an-experience .xp-description {
+    float: initial;
+    margin: 1em auto;
+  }
+
+  .an-experience h5 span {
+    display: block;
+    visibility: hidden;
+    height: 0px;
+  }
 }
 
 /*  CONTACT STYLES  */
@@ -615,6 +678,12 @@ li.project-wrapper {
   width: 60%;
   margin: 5em auto;
   text-align: center;
+}
+
+@media screen and (max-width: 500px) {
+  #contact .col-md-6 {
+    padding-top: 2em;
+  }
 }
 
 /*  FOOTER */
