@@ -1,3 +1,4 @@
 #!/bin/bash
 
-echo "Hello world"
+find /www/kevinchen/* | grep -v resume.pdf | rm -rf
+cp -r dist/* /www/kevinchen/
