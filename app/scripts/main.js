@@ -1,38 +1,42 @@
 'use strict';
 
-var navigation = $('.navigation');
-var offset = navigation.offset().top;
+var $navigation = $('.navigation');
+var offset = $navigation.offset().top;
 
 $(window).on('scroll', function() {
     if($(window).scrollTop() > offset + 20) {
-        navigation.addClass('become-header');
+        $navigation.addClass('become-header');
     }
     else {
-        navigation.removeClass('become-header');
+        $navigation.removeClass('become-header');
     }
 
-    // REREAD AND REFACTOR THIS
     $('section').each(function(){
-        var actual = $(this),
-            actualHeight = actual.height() + parseInt(actual.css('paddingTop').replace('px', '')) + parseInt(actual.css('paddingBottom').replace('px', '')),
-            actualAnchor = navigation.find('a[href="#' + actual.attr('id') + '"]');
-        if ( ( actual.offset().top - navigation.height() <= $(window).scrollTop() ) && ( actual.offset().top +  actualHeight - navigation.height() > $(window).scrollTop() ) ) {
-            actualAnchor.addClass('active');
+        var $section = $(this),
+            $sectionAnchor = $navigation.find('a[href="#' + $section.attr('id') + '"]');
+        if (( $section.offset().top - $navigation.height() <= $(window).scrollTop()) &&
+            ( $section.offset().top +  $section.outerHeight() - $navigation.height() > $(window).scrollTop())) {
+            $sectionAnchor.addClass('active');
         }
         else {
-            actualAnchor.removeClass('active');
+            $sectionAnchor.removeClass('active');
         }
     });
 });
 
-$('.navigation').find('a').on('click', function(event) {
+$navigation.find('a').on('click', function(event) {
     event.preventDefault();
-    var target= $(this.hash);
+    var target = $(this.hash);
     $('body, html').stop().animate({
         'scrollTop': target.offset().top
         }, 1500, 'easeInOutExpo'
-    ); 
+    );
+    $('.navigation ul').removeClass('is-visible');
 });
+
+$('.navigation-trigger').on('click', function(event) {
+  $('.navigation ul').toggleClass('is-visible');
+})
 
 $('.project-overlay').click(function(event) {
     $(event.currentTarget).css('top', '-100%');
