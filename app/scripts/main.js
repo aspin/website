@@ -48,3 +48,29 @@ $('.project-details').click(function(event) {
     $(event.currentTarget).siblings('.project-overlay').css('top', '0px');
     $(event.currentTarget).siblings('img').css('top', '0px');
 });
+
+// Project Navigation
+
+var current = 0;
+
+$('.arrow-left').click(function(event) {
+  event.preventDefault();
+  var left = getCssInteger($('.project-wrapper-list').css('left'));
+  if (current > 0) {
+    current -= 1;
+    $('.project-wrapper-list').css('left', - current * 753);
+  }
+});
+
+$('.arrow-right').click(function(event) {
+  event.preventDefault();
+  var left = getCssInteger($('.project-wrapper-list').css('left'));
+  if (current < 6) {
+    current += 1;
+    $('.project-wrapper-list').css('left', - current * 753);
+  }
+});
+
+function getCssInteger(str) {
+  return Number(str.replace(/[^-\d\.]/g, ''));
+}
