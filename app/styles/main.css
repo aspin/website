@@ -379,7 +379,6 @@ section > div {
 }
 
 #projects-container  h2 {
-  /*margin-bottom: 2em;*/ /* @media big? */
   margin-bottom: 1em;
 }
 
@@ -389,7 +388,7 @@ section > div {
 }
 
 ul.project-wrapper-list {
-  width: 4550px;
+  width: 5300px; /* + 750 / project */
 }
 
 ul.project-wrapper-list::-webkit-scrollbar {
@@ -538,7 +537,7 @@ li.project-wrapper {
 }
 
 .project-detail-whole {
-  width: 100%;
+  width: 100% !important;
 }
 
 /*  SKILLS DISPLAY  */
@@ -550,6 +549,9 @@ li.project-wrapper {
 .skills-display {
   width: 100%;
   margin: 0 auto;
+}
+
+#skills .skills-display {
   text-align: center;
 }
 

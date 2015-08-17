@@ -141,6 +141,38 @@
 
             <li class="project-wrapper">
               <div class="project">
+                <img class="project-overlay-image" src="images/projects/meteoroids.png">
+                <div class="project-overlay">
+                  <h3> Meteoroids </h3>
+                  <p> "Most Interstellar" Space Shooter</p>
+                  <em> MeteorHack, August 2015 </em>
+                  <div class="project-more-button">Details</div>
+                </div>
+                <div class="project-details">
+                  <p>Meteoroids is an experimental quasi-multiplayer asteroids-esque space shooter game built at MeteorHack, where it won the "Most Interstellar" prize.</p>
+                  <p>By quasi-multiplayer, I mean that we tried using Meteor's reactive data to store ingame state as a snapshot of the Mongo database at a given moment in the game. This, as most people can imagine, was pretty inefficienct. We attempted to minimize the necessary data sent from each client (e.g. send only movement changes instead of position), but quickly found that discrepancies in timing caused clients to quickly desync.</p>
+                  <p>As a result, Meteoroids becomes extra chaotic &mdash; bullets fire from approximately other ships' locations and asteroids are always located in different positions, though destruction of asteroids at each "level" happens simultaneously.</p>
+                  <p>Nevertheless, we had fun creating and playing this little game. Features a boss and 4 weapons!</p>
+                  <div class="project-details-footer">
+                    <div class="project-detail-left">
+                      <p>Play at <a href="http://meteoroids.me">meteoroids.me</a>!</p>
+                      <p>Github repo: <a href="https://github.com/aspin/meteoroids">https://github.com/aspin/meteoroids</a></p>
+                    </div>
+                    <div class="project-detail-right project-detail-tech skills-display">
+                      <ul>
+                        <li><div><img src="images/tech/meteor.png"></div></li>
+                        <li><div><img src="images/tech/mongodb.png"></div></li>
+                        <li><div><img src="images/tech/phaser.png"></div></li>
+                        <!-- <li><div><img src="images/tech/cocoapods.png"></div></li> -->
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </li>
+
+            <li class="project-wrapper">
+              <div class="project">
                 <img class="project-overlay-image" src="images/projects/rift.png">
                 <div class="project-overlay">
                   <h3> Project Rift </h3>
@@ -228,7 +260,7 @@
                         <figcaption></figcaption>
                       </figure>
                     </div> -->
-                    <div class="project-detail-left project-detail-tech skills-display">
+                    <div class="project-detail-tech skills-display project-detail-whole">
                       <ul>
                         <li><div><img src="images/tech/meteor.png"></div></li>
                         <li><div><img src="images/tech/mongodb.png"></div></li>
