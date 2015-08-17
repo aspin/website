@@ -53,9 +53,12 @@ $('.project-details').click(function(event) {
 
 var current = 0;
 
+function getCssInteger(str) {
+  return Number(str.replace(/[^-\d\.]/g, ''));
+}
+
 $('.arrow-left').click(function(event) {
   event.preventDefault();
-  var left = getCssInteger($('.project-wrapper-list').css('left'));
   if (current > 0) {
     current -= 1;
     $('.project-wrapper-list').css('left', - current * 753);
@@ -64,13 +67,8 @@ $('.arrow-left').click(function(event) {
 
 $('.arrow-right').click(function(event) {
   event.preventDefault();
-  var left = getCssInteger($('.project-wrapper-list').css('left'));
   if (current < 6) {
     current += 1;
     $('.project-wrapper-list').css('left', - current * 753);
   }
 });
-
-function getCssInteger(str) {
-  return Number(str.replace(/[^-\d\.]/g, ''));
-}
