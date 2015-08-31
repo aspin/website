@@ -1,0 +1,109 @@
+body {
+  background-color: #220142;
+  color: #ffffff;
+  font-family: "Open Sans", sans-serif;
+}
+
+h1 {
+  font-size: 2.8rem;
+  font-weight: 300;
+}
+
+section {
+
+}
+
+/*
+
+Navbar
+
+*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 80px;
+  background-color: #000000;
+  -webkit-perspective: 1000px;
+  -moz-perspective: 1000px;
+  perspective: 1000px;
+  -webkit-transform: translateY(-100%);
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -o-transform: translateY(-100%);
+  transform: translateY(-100%);
+  -webkit-transition: -webkit-transform 0.5s 0s, visibility 0s 0.5s;
+  -moz-transition: -moz-transform 0.5s 0s, visibility 0s 0.5s;
+  transition: transform 0.5s 0s, visibility 0s 0.5s;
+}
+
+@media only screen and (min-width: 768px) {
+  nav {
+    height: 170px;
+    }
+}
+
+nav.visible {
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+  transform: translateY(0);
+  -webkit-transition: -webkit-transform 0.5s 0s, visibility 0.5s 0s;
+  -moz-transition: -moz-transform 0.5s 0s, visibility 0.5s 0s;
+  transition: transform 0.5s 0s, visibility 0.5s 0s;
+}
+
+nav ul {
+  position: relative;
+  height: 100%;
+  background-color: #343c55;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform-origin: center bottom;
+  -moz-transform-origin: center bottom;
+  -ms-transform-origin: center bottom;
+  -o-transform-origin: center bottom;
+  transform-origin: center bottom;
+  -webkit-transform: rotateX(90deg);
+  -moz-transform: rotateX(90deg);
+  -ms-transform: rotateX(90deg);
+  -o-transform: rotateX(90deg);
+  transform: rotateX(90deg);
+  -webkit-transition: -webkit-transform 0.5s;
+  -moz-transition: -moz-transform 0.5s;
+  transition: transform 0.5s;
+}
+
+nav.visible ul {
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+}
+
+nav ul li {
+  display: inline-block;
+  height: 100px;
+  width: 33%;
+  padding: 10px;
+}
+
+/*
+
+Sections
+
+*/
+
+/* Info */
+#info {
+  padding: 4em;
+}
