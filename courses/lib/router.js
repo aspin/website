@@ -1,3 +1,4 @@
+// All routes need to be /courses/.
 
-// example routing with Iron Router
-Router.route('/', {name: 'view'});
+Router.route('/courses/');
+Router.route('/courses/eecs111', { name: 'eecs111'} );

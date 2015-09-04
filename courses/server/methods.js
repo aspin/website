@@ -6,9 +6,3 @@
     server that has full access to database.
 
 */
-
-Meteor.methods({
-    methodName: function () {
-        // ...
-    }
-});
