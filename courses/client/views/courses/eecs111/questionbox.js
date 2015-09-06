@@ -8,10 +8,11 @@ Template.eecs111QuestionBox.events({
     chatMessage += question;
     Meteor.call('slackMessage', chatMessage, function(error, result) {
       if (error) {
-        console.log('error', error);
+        alert.log('I must have messed something up. Oops! Email me your question and send me this error.', error);
       }
       if (result) {
-
+        $('.success-text').show();
+        event.target.reset();
       }
     });
   }

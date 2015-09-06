@@ -4,5 +4,6 @@ Meteor.methods({
       url: SLACK_ENDPOINT,
       data: message
     });
+    return 1;
   }
 });
