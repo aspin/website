@@ -1,15 +1,16 @@
 Template.eecs111QuestionBox.onRendered(function() {
   var delay = 2500,
       $words = $('.rotating-words span'),
-      next = 1,
+      current = 0,
       length = $words.length;
 
   function rotateWord() {
-    $words.removeClass('visible');
+    var next = (current + 1 == length) ? 0 : current + 1;
     $words.removeClass('hiding');
+    $words.removeClass('visible');
+    $($words[current]).addClass('hiding');
     $($words[next]).addClass('visible');
-    $($words[next-1]).addClass('hiding');
-    (next + 1 == length) ? next = 0 : next += 1;
+    current = next;
     setTimeout(rotateWord, delay);
   }
 
