@@ -5,13 +5,8 @@ var MenuOption = {
 };
 
 Template.eecs111.onRendered(function() {
-  // var hash = window.location.hash;
-  // if (hash) {
-  //   Session.set('selectedOption', hash.slice(1));
-  // }
-  // else {
   Session.set('selectedOption', MenuOption.Home);
-  // }
+  document.title = 'Kevin Chen | EECS 111'
 });
 
 Template.eecs111.helpers({
