@@ -1,3 +1,21 @@
+Template.eecs111QuestionBox.onRendered(function() {
+  var delay = 2500,
+      $words = $('.rotating-words span'),
+      next = 1,
+      length = $words.length;
+
+  function rotateWord() {
+    $words.removeClass('visible');
+    $words.removeClass('hiding');
+    $($words[next]).addClass('visible');
+    $($words[next-1]).addClass('hiding');
+    (next + 1 == length) ? next = 0 : next += 1;
+    setTimeout(rotateWord, delay);
+  }
+
+  setTimeout(rotateWord, delay);
+});
+
 Template.eecs111QuestionBox.events({
   'submit #question': function(event, template) {
     event.preventDefault();
