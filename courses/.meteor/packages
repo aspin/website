@@ -7,6 +7,10 @@
 meteor-platform
 autopublish
 insecure
-mizzao:bootstrap-3
 iron:router
 fourseven:scss
+twbs:bootstrap
+sacha:spin
+chuangbo:cookie
+webstudiopro:curl
+http

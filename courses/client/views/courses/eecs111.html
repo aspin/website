@@ -1,10 +1,14 @@
 <template name="eecs111">
-  {{> rotatingNav}}
-
   <main class="screen-fill centered">
-    <div>
-      <h1 id="blah">EECS 111</h1>
-      <h1>TA: Kevin Chen</h1>
-    </div>
+    <span class="rotating-nav-toggle glyphicon glyphicon-menu-hamburger"></span>
+    {{#if home}}
+      {{> eecs111Home}}
+    {{else}}
+      {{#if syllabus}}
+        {{> eecs111Syllabus}}
+      {{else}}
+        {{> eecs111QuestionBox}}
+      {{/if}}
+    {{/if}}
   </main>
 </template>
