@@ -383,6 +383,7 @@ section > div {
 }
 
 ul.project-wrapper-list {
+  left: 0;
   position: relative;
   width: 5300px; /* + 750 / project */
   transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
