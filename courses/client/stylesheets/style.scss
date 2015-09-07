@@ -1,5 +1,7 @@
+@import 'colors';
+
 body {
-  color: #ffffff;
+  color: $white;
   font-family: 'Source Sans Pro';
   font-weight: 300;
 }
@@ -17,7 +19,7 @@ h3 {
 }
 
 a {
-  color: #ffffff;
+  color: $white;
 }
 
 main {
@@ -25,7 +27,7 @@ main {
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-color: #220142;
+  background-color: $wildcat-purple;
 }
 
 section {
@@ -51,4 +53,25 @@ form {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.btn-submit {
+  float: left;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.25em;
+  border: none;
+  padding: 16px 20px;
+  margin-top: 10px;
+}
+
+.btn-blue {
+  background-color: $sky-blue;
+}
+
+.success-text {
+  float: left;
+  margin-top: 26px;
+  margin-left: 26px;
+  display: none;
 }
