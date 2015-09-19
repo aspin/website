@@ -1,3 +1,9 @@
+@import 'sizes';
+
 .disabled {
   color: rgb(80, 80, 80);
+}
+
+.paragraph-text {
+  font-size: $paragraph;
 }

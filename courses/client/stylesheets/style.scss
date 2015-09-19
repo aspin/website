@@ -1,4 +1,5 @@
 @import 'colors';
+@import 'sizes';
 
 body {
   color: $white;
@@ -74,4 +75,15 @@ form {
   margin-top: 26px;
   margin-left: 26px;
   display: none;
+}
+
+.scroll {
+  overflow-y: auto;
+  max-height: 80vh;
+
+  ul {
+    list-style-type: circle;
+    margin-left: 15px;
+    margin-bottom: 15px;
+  }
 }
