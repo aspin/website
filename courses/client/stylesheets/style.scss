@@ -77,6 +77,10 @@ form {
   display: none;
 }
 
+.scroll-wrapper {
+  overflow-x: hidden;
+}
+
 .scroll {
   overflow-y: auto;
   max-height: 80vh;

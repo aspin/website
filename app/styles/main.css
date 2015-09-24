@@ -312,7 +312,7 @@ section > div {
 /*  SECTION-SPECIFIC STYLES  */
 
 #head {
-  background-image: url(../images/backgrounds/goldengate3.png);
+  background-image: url(../images/backgrounds/goldengate.png);
 }
 
 #about {
@@ -336,7 +336,7 @@ section > div {
 }
 
 #contact {
-  background-image: url(../images/backgrounds/sunset2.png);
+  background-image: url(../images/backgrounds/sunset.png);
   position: relative;
 }
 
