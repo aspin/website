@@ -1,3 +1,4 @@
+app/videos
 node_modules
 dist
 .tmp
