@@ -326,11 +326,13 @@ section > div {
 
 #skills {
   /*background-color: #C8C8C8;*/
-  background-color: #484848;
+  /*background-color: #484848;*/
+  background-color: #456B74;
 }
 
 #experience {
-  background-color: #883a3a;
+  /*background-color: #883a3a;*/
+  background-color: #212121;
 }
 
 #contact {
