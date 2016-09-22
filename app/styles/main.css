@@ -388,7 +388,7 @@ ul.project-wrapper-list {
   left: 0;
   position: relative;
   width: 5300px; /* + 750 / project */
-  transition: left 1s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+  transition: left 1s cubic-bezier(0.8, 0, 0.2, 1);
   margin-bottom: 3em;
 }
 
@@ -417,7 +417,7 @@ li.project-wrapper {
   height: 100%;
   position: absolute;
   z-index: 2;
-  transition: top 1s ease;
+  transition: top 0.5s ease;
 }
 
 .project:hover .project-more-button {
@@ -434,10 +434,10 @@ li.project-wrapper {
   height: 100%;
   background: rgba(0,0,0,0.6);
   text-align: center;
-  -webkit-transition: background-color .25s, top 1s ease;
-  -moz-transition: background-color .25s, top 1s ease;
-  -o-transition: background-color .25s, top 1s ease;
-  transition: background-color .25s, top 1s ease;
+  -webkit-transition: background-color .25s, top 0.5s ease;
+  -moz-transition: background-color .25s, top 0.5s ease;
+  -o-transition: background-color .25s, top 0.5s ease;
+  transition: background-color .25s, top 0.5s ease;
   border-radius: 2px;
   z-index: 3;
   top: 0px; /* need to explicitly set top for transition */

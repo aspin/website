@@ -3,6 +3,26 @@
 var $navigation = $('.navigation');
 var offset = $navigation.offset().top;
 
+// TODO: import lodash and do some dependency management
+Array.prototype.equals = function (array) {
+  if (!array)
+    return false;
+
+  if (this.length != array.length)
+    return false;
+
+  for (var i = 0, l=this.length; i < l; i++) {
+    if (this[i] instanceof Array && array[i] instanceof Array) {
+      if (!this[i].equals(array[i]))
+        return false;
+    }
+    else if (this[i] != array[i]) {
+      return false;
+    }
+  }
+  return true;
+};
+
 $(window).on('scroll', function() {
     if($(window).scrollTop() > offset + 20) {
         $navigation.addClass('become-header');
@@ -44,9 +64,23 @@ $('.project-overlay').click(function(event) {
     $(event.currentTarget).siblings('img').css('top', '-100%');
 });
 
-$('.project-details').click(function(event) {
-    $(event.currentTarget).siblings('.project-overlay').css('top', '0px');
-    $(event.currentTarget).siblings('img').css('top', '0px');
+var currentPos = [];
+$('.project-details').on('mousedown', function (evt) {
+  var $target = $(evt.currentTarget);
+  currentPos = [ evt.pageX, evt.pageY ];
+
+  $('.project-details').on('mousemove', function handler(evt) {
+    currentPos = [ evt.pageX, evt.pageY ];
+    $('.project-details').off('mousemove', handler);
+  });
+
+  $('.project-details').on('mouseup', function handler(evt) {
+    if([ evt.pageX, evt.pageY ].equals(currentPos)) {
+      $target.siblings('.project-overlay').css('top', '0px');
+      $target.siblings('img').css('top', '0px');
+    }
+    $('.project-details').off('mouseup', handler);
+  });
 });
 
 // Project Navigation
