@@ -312,7 +312,7 @@ section > div {
 /*  SECTION-SPECIFIC STYLES  */
 
 #head {
-  background-image: url(../images/backgrounds/goldengate.png);
+  background-image: url(../images/backgrounds/icelandmountains.jpg);
 }
 
 #about {
@@ -336,7 +336,7 @@ section > div {
 }
 
 #contact {
-  background-image: url(../images/backgrounds/sunset.png);
+  background-image: url(../images/backgrounds/icelandsunrise.jpeg);
   position: relative;
 }
 

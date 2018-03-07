@@ -6,3 +6,5 @@ bower_components
 
 # config files
 courses/server/lib/environment.js
+.DS_Store
+
