@@ -19,7 +19,7 @@ const experiences: Experience[] = [
     title: "Software Engineer",
     location: "Boston, MA",
     description: "foo bar baz",
-    image: "",
+    image: "/src/assets/img/fitbit.png",
   },
 ];
 
