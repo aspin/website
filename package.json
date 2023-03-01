@@ -1,0 +1,20 @@
+{
+  "name": "website",
+  "version": "2.0.0",
+  "description": "personal website",
+  "repository": "git@github.com:aspin/website.git",
+  "author": "Kevin Chen (kevinjchen94@gmail.com)",
+  "license": "MIT",
+  "private": false,
+  "devDependencies": {
+    "@types/react": "18.0.28",
+    "@types/react-dom": "18.0.11",
+    "parcel": "2.8.3",
+    "parcel-bundler": "1.12.5",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "react": "18.2.0",
+    "react-dom": "18.2.0"
+  }
+}
