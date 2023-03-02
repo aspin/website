@@ -1,9 +1,13 @@
+import bloxroute from "../assets/img/company/bloxroute.png";
+import fitbit from "../assets/img/company/fitbit.png";
+
 export interface Experience {
-  company: string,
-  title: string,
-  location: string,
-  description: string,
-  image: string,
+  company: string;
+  title: string;
+  location: string;
+  description: string;
+  image: string;
+  dates: string;
 }
 
 const experiences: Experience[] = [
@@ -11,15 +15,17 @@ const experiences: Experience[] = [
     company: "bloXroute Labs",
     title: "Software Engineer Tech Lead",
     location: "Chicago, IL",
-    description: "foo bar",
-    image: "",
+    description: "blockchain infrastructure company",
+    image: bloxroute,
+    dates: "September 2018 => Present",
   },
   {
     company: "Fitbit",
     title: "Software Engineer",
     location: "Boston, MA",
-    description: "foo bar baz",
-    image: "/src/assets/img/fitbit.png",
+    description: "wearable tech backend engineer",
+    image: fitbit,
+    dates: "September 2016 => September 2018",
   },
 ];
 

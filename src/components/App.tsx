@@ -1,17 +1,19 @@
-import React from "react";
+import "@fontsource/courier-prime/300.css";
+import "@fontsource/courier-prime/400.css";
+import "@fontsource/courier-prime/500.css";
+import "@fontsource/courier-prime/700.css";
 import { Container } from "@mui/material";
-import Experiences from "./experiences/Experiences";
-import experiences from "../data/experience";
+import React from "react";
 
-import '@fontsource/roboto/300.css';
-import '@fontsource/roboto/400.css';
-import '@fontsource/roboto/500.css';
-import '@fontsource/roboto/700.css';
+import experiences from "../data/experience";
+import Experiences from "./experiences/Experiences";
+import Intro from "./intro/intro";
 
 function App() {
   return (
-    <Container>
-      <Experiences experiences={experiences}></Experiences>
+    <Container maxWidth="sm">
+      <Intro />
+      <Experiences experiences={experiences} />
     </Container>
   );
 }
