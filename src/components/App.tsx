@@ -9,7 +9,7 @@ import Intro from "./intro/intro";
 
 function App() {
   return (
-    <ThemeProvider theme={global}>
+    <React.Fragment>
       <Intro />
       <Container
         maxWidth="md"
@@ -19,7 +19,7 @@ function App() {
       >
         <Experiences experiences={experiences} />
       </Container>
-    </ThemeProvider>
+    </React.Fragment>
   );
 }
 

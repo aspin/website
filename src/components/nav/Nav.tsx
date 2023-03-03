@@ -1,4 +1,4 @@
-import { Button, ButtonProps } from "@mui/material";
+import { Box, Button, ButtonProps } from "@mui/material";
 import React from "react";
 
 function button(props: ButtonProps, content: string) {
@@ -9,6 +9,8 @@ function button(props: ButtonProps, content: string) {
       sx={{
         paddingLeft: 0,
         paddingRight: 0,
+        minWidth: 0,
+        marginRight: "1em",
       }}
     >
       {content}
@@ -18,11 +20,11 @@ function button(props: ButtonProps, content: string) {
 
 export default function Nav() {
   return (
-    <nav>
+    <Box sx={{marginTop: "1em"}} component="nav">
       {button({}, "About")}
       {button({}, "Work")}
       {button({}, "Projects")}
       {button({}, "Tech")}
-    </nav>
+    </Box>
   );
 }
