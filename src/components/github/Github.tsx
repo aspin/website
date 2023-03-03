@@ -2,11 +2,11 @@ import CodeIcon from "@mui/icons-material/Code";
 import { Avatar, ListItem, ListItemAvatar, ListItemText } from "@mui/material";
 import React from "react";
 
-import { colors } from "../../theme/zenburn";
+import { zenburnColors } from "../../theme/zenburn";
 
 function Github() {
   return (
-    <ListItem sx={{ color: colors.special }}>
+    <ListItem sx={{ color: zenburnColors.special }}>
       <ListItemAvatar>
         <Avatar>
           <CodeIcon />

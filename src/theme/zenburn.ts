@@ -1,7 +1,9 @@
 import { createTheme } from "@mui/material";
-import { globalTheme } from "./global";
 
-const colors = {
+import { global } from "./global";
+
+// https://en.wikipedia.org/wiki/Wikipedia:Zenburn
+const zenburnColors = {
   background: "#404040",
   text: "#DCDCCC",
   subtext: "#8CD0D3",
@@ -15,11 +17,11 @@ const zenburn = createTheme({
     MuiTypography: {
       styleOverrides: {
         h1: {
-          color: colors.text,
+          color: zenburnColors.text,
           fontSize: "3rem",
         },
         h2: {
-          color: colors.subtext,
+          color: zenburnColors.subtext,
           fontSize: "1.2rem",
         },
       },
@@ -27,18 +29,12 @@ const zenburn = createTheme({
     MuiButton: {
       styleOverrides: {
         text: {
-          color: colors.link
-        }
-      }
-    }
+          color: zenburnColors.link,
+        },
+      },
+    },
   },
-  palette: {
-    background: {
-      default: colors.background
-    }
-  },
-  ...globalTheme
+  ...global,
 });
 
-// https://en.wikipedia.org/wiki/Wikipedia:Zenburn
-export { zenburn, colors };
+export { zenburn, zenburnColors };

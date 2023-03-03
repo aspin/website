@@ -1,7 +1,7 @@
 import { Box, Container, Grid, ThemeProvider, Typography } from "@mui/material";
 import React from "react";
 
-import { colors, zenburn } from "../../theme/zenburn";
+import { zenburnColors, zenburn } from "../../theme/zenburn";
 import Nav from "../nav/Nav";
 import Github from "../github/Github";
 
@@ -12,7 +12,7 @@ function Intro() {
         sx={{
           margin: "0",
           width: "100%",
-          backgroundColor: colors.background,
+          backgroundColor: zenburnColors.background,
         }}
       >
         <Container
