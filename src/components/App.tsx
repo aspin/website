@@ -1,10 +1,15 @@
 import "@fontsource/courier-prime";
-import { Container, ThemeProvider } from "@mui/material";
+import { Container } from "@mui/material";
 import React from "react";
 
 import experiences from "../data/experience";
-import Experiences from "./experiences/Experiences";
+import expertise from "../data/expertise";
+import projects from "../data/project";
+import About from "./about/About";
 import Intro from "./intro/intro";
+import Project from "./projects/Projects";
+import Tech from "./tech/Tech";
+import Work from "./work/Work";
 
 function App() {
   return (
@@ -16,7 +21,10 @@ function App() {
           padding: "4em 0",
         }}
       >
-        <Experiences experiences={experiences} />
+        <About />
+        <Work experiences={experiences} />
+        <Project projects={projects} />
+        <Tech expertise={expertise} />
       </Container>
     </React.Fragment>
   );

@@ -5,20 +5,23 @@ import {
   ListItem,
   ListItemAvatar,
   ListItemText,
-  ThemeProvider,
+  ThemeProvider, Typography,
 } from "@mui/material";
 import React from "react";
 
 import { Experience } from "../../data/experience";
 import { light } from "../../theme/light";
 
-interface ExperiencesProps {
+interface WorkProps {
   experiences: Experience[];
 }
 
-function Experiences(props: ExperiencesProps) {
+function Work(props: WorkProps) {
   return (
     <ThemeProvider theme={light}>
+      <Typography variant="h2">
+        [work]
+      </Typography>
       <List>{props.experiences.map((exp) => experience(exp))}</List>
     </ThemeProvider>
   );
@@ -48,4 +51,4 @@ function experience(exp: Experience) {
   );
 }
 
-export default Experiences;
+export default Work;
