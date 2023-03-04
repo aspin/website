@@ -3,7 +3,7 @@ import { Container } from "@mui/material";
 import React from "react";
 
 import experiences from "../data/experience";
-import expertise from "../data/expertise";
+import { expertise, recentExpertise } from "../data/expertise";
 import projects from "../data/project";
 import About from "./about/About";
 import Intro from "./intro/intro";
@@ -24,7 +24,7 @@ function App() {
         <About />
         <Work experiences={experiences} />
         <Project projects={projects} />
-        <Tech expertise={expertise} />
+        <Tech recentExpertise={recentExpertise} expertise={expertise} />
       </Container>
     </React.Fragment>
   );

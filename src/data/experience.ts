@@ -27,6 +27,30 @@ const experiences: Experience[] = [
     image: fitbit,
     dates: "September 2016 => September 2018",
   },
+  {
+    company: "Toptal",
+    title: "Freelance Developer",
+    location: "Remote",
+    description: "occasional freelance contracts",
+    image: "",
+    dates: "ongoing",
+  },
+  {
+    company: "Indiegogo",
+    title: "Software Engineer Intern / KPCB Fellow",
+    location: "San Francisco, CA",
+    description: "intern + kpcb fellow",
+    image: "",
+    dates: "Summer 2015",
+  },
+  {
+    company: "Epic",
+    title: "Software Engineer Intern",
+    location: "Madison, WI",
+    description: "work",
+    image: "",
+    dates: "Summer 2014",
+  },
 ];
 
 export default experiences;

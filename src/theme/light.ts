@@ -14,6 +14,9 @@ const light = createTheme({
           fontSize: "1.2rem",
           textAlign: "center",
         },
+        h3: {
+          fontSize: "1.1rem",
+        },
       },
     },
   },
