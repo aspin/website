@@ -1,4 +1,4 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 
 import { global } from "./global";
 
@@ -14,6 +14,14 @@ const zenburnColors = {
 
 const zenburn = createTheme({
   components: {
+    MuiLink: {
+      styleOverrides: {
+        root: {
+          color: zenburnColors.link,
+          textDecorationColor: zenburnColors.link,
+        },
+      },
+    },
     MuiTypography: {
       styleOverrides: {
         h1: {

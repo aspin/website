@@ -1,7 +1,6 @@
-import { createTheme } from "@mui/material";
+import { createTheme } from "@mui/material/styles";
 
 import { global } from "./global";
-import { zenburnColors } from "./zenburn";
 
 const light = createTheme({
   components: {
@@ -13,9 +12,13 @@ const light = createTheme({
         h2: {
           fontSize: "1.2rem",
           textAlign: "center",
+          marginBottom: "2em",
         },
         h3: {
           fontSize: "1.1rem",
+        },
+        body1: {
+          marginBottom: "1em",
         },
       },
     },

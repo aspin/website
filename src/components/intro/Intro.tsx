@@ -1,9 +1,10 @@
 import { Box, Container, Grid, ThemeProvider, Typography } from "@mui/material";
 import React from "react";
 
-import { zenburnColors, zenburn } from "../../theme/zenburn";
-import Nav from "../nav/Nav";
+import { zenburn, zenburnColors } from "../../theme/zenburn";
 import Github from "../github/Github";
+import LinkNewTab from "../link_new_tab/LinkNewTab";
+import Nav from "../nav/Nav";
 
 function Intro() {
   return (
@@ -25,11 +26,12 @@ function Intro() {
             <Grid item xs={8}>
               <Typography variant="h1">Kevin Chen</Typography>
               <Typography variant="h2">
-                dev @ bloXroute Labs
+                dev @{" "}
+                <LinkNewTab href="https://bloxroute.com/">
+                  bloXroute Labs
+                </LinkNewTab>
               </Typography>
-              <Typography variant="h2">
-                kevinjchen94@gmail.com
-              </Typography>
+              <Typography variant="h2">kevinjchen94@gmail.com</Typography>
               <Nav />
             </Grid>
             <Grid item xs={4}>
