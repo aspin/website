@@ -1,3 +1,5 @@
+import DescriptionIcon from "@mui/icons-material/Description";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import { Box, Container, Grid, ThemeProvider, Typography } from "@mui/material";
 import React from "react";
 
@@ -32,6 +34,26 @@ function Intro() {
                 </LinkNewTab>
               </Typography>
               <Typography variant="h2">kevinjchen94@gmail.com</Typography>
+              <Typography variant="h3">
+                <LinkNewTab
+                  href="https://www.linkedin.com/in/kevkevchen/"
+                  sx={{
+                    color: zenburnColors.subtext,
+                    marginRight: "0.4rem",
+                  }}
+                >
+                  <LinkedInIcon fontSize="inherit" />
+                </LinkNewTab>
+                {/*// TODO: upload new CV*/}
+                <LinkNewTab
+                  href="https://www.linkedin.com/in/kevkevchen/"
+                  sx={{
+                    color: zenburnColors.subtext,
+                  }}
+                >
+                  <DescriptionIcon fontSize="inherit" />
+                </LinkNewTab>
+              </Typography>
               <Nav />
             </Grid>
             <Grid item xs={4}>

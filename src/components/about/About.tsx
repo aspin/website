@@ -46,8 +46,8 @@ function About() {
         Some auxiliary interests include{" "}
         <LinkNewTab href="https://www.vim.org/">vim</LinkNewTab>,{" "}
         <LinkNewTab href="https://www.rust-lang.org/">Rust</LinkNewTab>,{" "}
-        <LinkNewTab href="https://elixir-lang.org/">Elixir</LinkNewTab>, game
-        development (see {" "}
+        <LinkNewTab href="https://elixir-lang.org/">Elixir</LinkNewTab>,
+        developer productivity tooling, game development (see{" "}
         <LinkNewTab href="https://bevyengine.org/">Bevy</LinkNewTab>,{" "}
         <LinkNewTab href="https://kyren.github.io/2018/09/14/rustconf-talk.html">
           a really interesting ECS talk
@@ -59,8 +59,7 @@ function About() {
         ). If I have time even outside of that you can find me climbing, gaming,
         training for a triathlon, or playing with my dog (TODO: link).
       </Typography>
-      <Typography variant="body1">
-      </Typography>
+      <Typography variant="body1"></Typography>
     </Section>
   );
 }

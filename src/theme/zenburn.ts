@@ -32,6 +32,11 @@ const zenburn = createTheme({
           color: zenburnColors.subtext,
           fontSize: "1.2rem",
         },
+        h3: {
+          color: zenburnColors.subtext,
+          fontSize: "1rem",
+          marginTop: "1rem",
+        },
       },
     },
     MuiButton: {
