@@ -4,12 +4,14 @@ import React, { PropsWithChildren } from "react";
 import { light } from "../../theme/light";
 
 interface SectionProps {
+  id: string
 }
 
 function Section(props: PropsWithChildren<SectionProps>) {
   return (
-    <Box component="section" sx={{
-      marginBottom: "3em"
+    <Box id={props.id} component="section" sx={{
+      paddingTop: "3em",
+      marginBottom: "2em"
     }}>
       <ThemeProvider theme={light}>
         {props.children}

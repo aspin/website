@@ -2,19 +2,20 @@ import React from "react";
 import { Divider, List, ListItem, ListItemText, ThemeProvider, Typography } from "@mui/material";
 import { light } from "../../theme/light";
 import { Project } from "../../data/project";
+import Section from "../section/Section";
 
 interface ProjectProps {
   projects: Project[];
 }
 
-function Project(props: ProjectProps) {
+function Projects(props: ProjectProps) {
   return (
-    <ThemeProvider theme={light}>
+    <Section id="projects">
       <Typography variant="h2">
         [projects]
       </Typography>
       <List>{props.projects.map((p) => project(p))}</List>
-    </ThemeProvider>
+    </Section>
   );
 }
 
@@ -34,4 +35,4 @@ function project(p: Project) {
   );
 }
 
-export default Project;
+export default Projects;

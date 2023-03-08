@@ -6,7 +6,7 @@ import Section from "../section/Section";
 
 function About() {
   return (
-    <Section>
+    <Section id="about">
       <Typography variant="h2">[about]</Typography>
       <Typography variant="body1">
         Hi there! I'm Kevin and I'm a software engineer.

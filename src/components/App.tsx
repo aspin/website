@@ -7,7 +7,7 @@ import { expertise, recentExpertise } from "../data/expertise";
 import projects from "../data/project";
 import About from "./about/About";
 import Intro from "./intro/intro";
-import Project from "./projects/Projects";
+import Projects from "./projects/Projects";
 import Tech from "./tech/Tech";
 import Work from "./work/Work";
 
@@ -17,13 +17,10 @@ function App() {
       <Intro />
       <Container
         maxWidth="md"
-        sx={{
-          padding: "4em 0",
-        }}
       >
         <About />
         <Work experiences={experiences} />
-        <Project projects={projects} />
+        <Projects projects={projects} />
         <Tech recentExpertise={recentExpertise} expertise={expertise} />
       </Container>
     </React.Fragment>

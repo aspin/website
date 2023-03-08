@@ -17,8 +17,14 @@ const light = createTheme({
         h3: {
           fontSize: "1.1rem",
         },
+        h4: {
+          fontSize: "1.0rem",
+        },
         body1: {
-          marginBottom: "1em",
+          marginBottom: "1rem",
+        },
+        body2: {
+          marginBottom: "0.8rem",
         },
       },
     },
