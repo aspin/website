@@ -17,6 +17,17 @@ export interface Experience {
 
 const experiences: Experience[] = [
   {
+    company: "Hidden Road",
+    title: "Software Engineer",
+    location: "Remote",
+    description: [
+      "I'm just getting started here."
+    ],
+    image: bloxroute,
+    dates: "July 2023 => Present",
+    tech: ["python"],
+  },
+  {
     company: "bloXroute Labs",
     title: "Software Engineering Tech Lead",
     location: "Chicago, IL",
@@ -28,11 +39,11 @@ const experiences: Experience[] = [
         "specializing more.",
       "I've worked on low level network programming, blockchain protocol byte " +
         "parsing and serialization, smart contracts, fast event loops, DeFi " +
-        "exchange integrations, open-source libraries and SDKs, metrics reporting," +
+        "exchange integrations, open-source libraries and SDKs, metrics reporting, " +
         "monitoring systems, and much much more.",
     ],
     image: bloxroute,
-    dates: "September 2018 => Present",
+    dates: "September 2018 => July 2023",
     tech: ["go", "solana", "ethereum", "python", "docker"],
   },
   {
@@ -42,12 +53,13 @@ const experiences: Experience[] = [
     description: [
       "Fitbit was my first full-time software engineering job. I worked " +
         "primarily on microservice backends in our distributed network. Some " +
-        "projects I worked on include a fitness rules engine and a content " +
-        "delivery proxy. I also worked on developing Fitbit's ecommerce systems.",
+        "projects I worked on include a fitness rules engine, a content " +
+        "delivery proxy, Kafka/Heron streaming pipelines, and a variety of " +
+        "ecommerce systems.",
     ],
     image: fitbit,
     dates: "September 2016 => September 2018",
-    tech: ["java", "kotlin", "cassandra", "groovy"],
+    tech: ["java", "kotlin", "cassandra", "groovy", "kafka"],
   },
   {
     company: "Toptal",
@@ -67,9 +79,9 @@ const experiences: Experience[] = [
     location: "San Francisco, CA",
     description: [
       "I worked as a full-stack developer intern at Indiegogo with an emphasis " +
-        "on iOS development. I completed stories in payments, researched mobile " +
+        "on iOS development. I completed stories in payments (Apple Pay), researched mobile " +
         "frameworks, and built out behavior driven test cases.",
-      "I was placed at Indiegogo as one of the 2015 KPCB Fellows, which is " +
+      "I was placed at Indiegogo as one of the 2015 KPCB Fellows, " +
         "an exclusive program that places next-generation engineers and " +
         "entrepreneurs at startups.",
     ],
@@ -83,12 +95,12 @@ const experiences: Experience[] = [
     location: "Evanston, IL",
     description: [
       "Delta Lab was my primary commitment during college. I was part of the " +
-        "first iteration of Agile Research Studio, an initiative for " +
+        "first iteration of Agile Research Studios, an initiative for " +
         "undergraduate students to conduct independent research. During this time, " +
         "I designed and implemented several projects, ran " +
         "user studies, transcribed interviews, and much more.",
-      "My work in paper prototyping was published in ACM, and was recognized" +
-        " the Gotaas Award at Northwestern for superlative undergraduate research. " +
+      "My work in paper prototyping was published in ACM, and was recognized " +
+        "with the Gotaas Award at Northwestern for superlative undergraduate research. " +
         "I also was invited to fly to South Korea to talk about my projects.",
     ],
     image: delta,

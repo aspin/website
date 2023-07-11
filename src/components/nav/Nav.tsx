@@ -21,10 +21,10 @@ function button(props: ButtonProps, content: string) {
 export default function Nav() {
   return (
     <Box sx={{marginTop: "1em"}} component="nav">
-      {button({}, "about")}
       {button({}, "work")}
-      {button({}, "projects")}
       {button({}, "tech")}
+      {button({}, "about")}
+      {button({}, "projects")}
     </Box>
   );
 }

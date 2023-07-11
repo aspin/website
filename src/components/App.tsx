@@ -15,13 +15,11 @@ function App() {
   return (
     <React.Fragment>
       <Intro />
-      <Container
-        maxWidth="md"
-      >
-        <About />
+      <Container maxWidth="md">
         <Work experiences={experiences} />
-        <Projects projects={projects} />
         <Tech recentExpertise={recentExpertise} expertise={expertise} />
+        <About />
+        <Projects projects={projects} />
       </Container>
     </React.Fragment>
   );

@@ -5,35 +5,35 @@ export interface Expertise {
 
 const recentExpertise: Expertise[] = [
   {
-    name: "Golang",
+    name: "golang",
     image: "",
   },
   {
-    name: "Ethereum",
+    name: "ethereum",
     image: "",
   },
   {
-    name: "Solana",
+    name: "solana",
     image: "",
   },
   {
-    name: "Python",
+    name: "python",
     image: "",
   },
   {
-    name: "Prometheus",
+    name: "prometheus",
     image: "",
   },
   {
-    name: "Grafana",
+    name: "grafana",
     image: "",
   },
   {
-    name: "MySQL",
+    name: "mysql",
     image: "",
   },
   {
-    name: "React",
+    name: "react",
     image: "",
   },
   {
@@ -41,58 +41,138 @@ const recentExpertise: Expertise[] = [
     image: "",
   },
   {
-    name: "Github",
+    name: "github",
     image: "",
   },
   {
-    name: "Typescript",
+    name: "typescript",
     image: "",
   },
   {
-    name: "Redis",
+    name: "redis",
     image: "",
   },
   {
-    name: "nodeJS",
+    name: "nodejs",
     image: "",
   },
   {
-    name: "C#",
+    name: "docker",
     image: "",
   },
   {
-    name: "Docker",
+    name: "es6",
+    image: "",
+  },
+  {
+  name: "async i/o",
+    image: "",
+  },
+  {
+    name: "jetbrains",
+    image: "",
+  },
+  {
+    name: "grpc",
+    image: "",
+  },
+  {
+    name: "vim",
+    image: "",
+  },
+  {
+    name: "aws",
+    image: "",
+  },
+  {
+    name: "solidity",
+    image: "",
+  },
+  {
+    name: "foundry",
     image: "",
   },
 ];
 
 const expertise: Expertise[] = [
   {
-    name: "Java",
+    name: "rust",
     image: "",
   },
   {
-    name: "Cassandra",
+    name: "elixir",
     image: "",
   },
   {
-    name: "Kotlin",
+    name: "java",
     image: "",
   },
   {
-    name: "Swift",
+    name: "cassandra",
     image: "",
   },
   {
-    name: "mongoDB",
+    name: "c",
     image: "",
   },
   {
-    name: "Android",
+    name: "c++",
     image: "",
   },
   {
-    name: "Rust",
+    name: "c#",
+    image: "",
+  },
+  {
+    name: "kotlin",
+    image: "",
+  },
+  {
+    name: "swift",
+    image: "",
+  },
+  {
+    name: "kafka",
+    image: "",
+  },
+  {
+    name: "mongodb",
+    image: "",
+  },
+  {
+    name: "postgres",
+    image: "",
+  },
+  {
+    name: "android",
+    image: "",
+  },
+  {
+    name: "matlab",
+    image: "",
+  },
+  {
+    name: "angular",
+    image: "",
+  },
+  {
+    name: "terraform",
+    image: "",
+  },
+  {
+    name: "jenkins",
+    image: "",
+  },
+  {
+    name: "bash",
+    image: "",
+  },
+  {
+    name: "meteor",
+    image: "",
+  },
+  {
+    name: "bevy",
     image: "",
   },
 ]
