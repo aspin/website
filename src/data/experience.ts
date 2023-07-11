@@ -1,3 +1,4 @@
+import hiddenroad from "../assets/img/company/hiddenroad.jpeg";
 import bloxroute from "../assets/img/company/bloxroute.png";
 import delta from "../assets/img/company/delta.png";
 import epic from "../assets/img/company/epic.png";
@@ -23,7 +24,7 @@ const experiences: Experience[] = [
     description: [
       "I'm just getting started here."
     ],
-    image: bloxroute,
+    image: hiddenroad,
     dates: "July 2023 => Present",
     tech: ["python"],
   },

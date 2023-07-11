@@ -1,8 +1,10 @@
-import { Box, Chip, ListItem, TextField, Typography } from "@mui/material";
+import { Avatar, Box, Chip, ListItem, TextField, Typography } from "@mui/material";
 import React from "react";
 
 import { Expertise } from "../../data/expertise";
 import Section from "../section/Section";
+import { Simulate } from "react-dom/test-utils";
+import keyDown = Simulate.keyDown;
 
 interface TechProps {
   recentExpertise: Expertise[];
@@ -10,7 +12,7 @@ interface TechProps {
 }
 
 function Tech(props: TechProps) {
-  let [filter, setFilter] = React.useState("");
+  let [filter, setFilter] = React.useState(new RegExp(""));
   return (
     <Section id="tech">
       <Typography variant="h2">[tech]</Typography>
@@ -23,12 +25,12 @@ function Tech(props: TechProps) {
         things to keep me interested :)
       </Typography>
       <TextField
-        label="filter"
+        label="regex filter"
         fullWidth
         variant="filled"
         sx={{ marginBottom: "1em" }}
         onChange={(evt) => {
-          setFilter(evt.target.value);
+          setFilter(new RegExp(evt.target.value));
         }}
       />
       <Typography variant="body1">
@@ -43,7 +45,7 @@ function Tech(props: TechProps) {
   );
 }
 
-function expertise(expertise: Expertise[], filter: string) {
+function expertise(expertise: Expertise[], filter: RegExp) {
   return (
     <Box
       sx={{
@@ -56,16 +58,21 @@ function expertise(expertise: Expertise[], filter: string) {
       component="ul"
     >
       {expertise
-        .filter((exp) => exp.name.includes(filter))
+        .filter((exp) => exp.name.match(filter))
         .map((exp, index) => expertItem(exp, index))}
     </Box>
   );
 }
 
 function expertItem(exp: Expertise, index: number) {
+  let avatar = <Avatar>{exp.name[0]}</Avatar>
+  if (exp.image !== "") {
+    avatar = <Avatar alt={exp.name} src={exp.image} />
+  }
+
   return (
     <ListItem key={index} sx={{ width: "auto" }}>
-      <Chip label={exp.name}></Chip>
+      <Chip avatar={avatar} label={exp.name}></Chip>
     </ListItem>
   );
 }
