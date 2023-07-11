@@ -1,6 +1,15 @@
+import android from "../assets/img/technology/android.png";
+import angular from "../assets/img/technology/angular.png";
 import async from "../assets/img/technology/async.png";
 import aws from "../assets/img/technology/aws.png";
+import bash from "../assets/img/technology/bash.png";
+import bevy from "../assets/img/technology/bevy.png";
+import csharp from "../assets/img/technology/csharp.png";
+import cplusplus from "../assets/img/technology/c++.png";
+import c from "../assets/img/technology/c.png";
+import cassandra from "../assets/img/technology/cassandra.png";
 import docker from "../assets/img/technology/docker.png";
+import elixir from "../assets/img/technology/elixir.png";
 import es6 from "../assets/img/technology/es6.png";
 import ethereum from "../assets/img/technology/ethereum.png";
 import foundry from "../assets/img/technology/foundry.png";
@@ -8,16 +17,27 @@ import github from "../assets/img/technology/github.png";
 import golang from "../assets/img/technology/golang.png";
 import grafana from "../assets/img/technology/grafana.png";
 import grpc from "../assets/img/technology/grpc.png";
+import java from "../assets/img/technology/java.png";
+import jenkins from "../assets/img/technology/jenkins.png";
 import jetbrains from "../assets/img/technology/jetbrains.png";
+import kafka from "../assets/img/technology/kafka.png";
+import kotlin from "../assets/img/technology/kotlin.png";
+import matlab from "../assets/img/technology/matlab.png";
+import meteor from "../assets/img/technology/meteor.png";
+import mongodb from "../assets/img/technology/mongodb.png";
 import mysql from "../assets/img/technology/mysql.png";
 import nodejs from "../assets/img/technology/nodejs.png";
 import npm from "../assets/img/technology/npm.png";
-import react from "../assets/img/technology/react.png";
+import postgres from "../assets/img/technology/postgres.png";
 import prometheus from "../assets/img/technology/prometheus.png";
 import python from "../assets/img/technology/python.png";
+import react from "../assets/img/technology/react.png";
 import redis from "../assets/img/technology/redis.png";
+import rust from "../assets/img/technology/rust.png";
 import solana from "../assets/img/technology/solana.png";
 import solidity from "../assets/img/technology/solidity.png";
+import swift from "../assets/img/technology/swift.png";
+import terraform from "../assets/img/technology/terraform.png";
 import typescript from "../assets/img/technology/typescript.png";
 import vim from "../assets/img/technology/vim.png";
 
@@ -120,83 +140,83 @@ const recentExpertise: Expertise[] = [
 const expertise: Expertise[] = [
   {
     name: "rust",
-    image: "",
+    image: rust,
   },
   {
     name: "elixir",
-    image: "",
+    image: elixir,
   },
   {
     name: "java",
-    image: "",
+    image: java,
   },
   {
     name: "cassandra",
-    image: "",
+    image: cassandra,
   },
   {
     name: "c",
-    image: "",
+    image: c,
   },
   {
     name: "c++",
-    image: "",
+    image: cplusplus,
   },
   {
     name: "c#",
-    image: "",
+    image: csharp,
   },
   {
     name: "kotlin",
-    image: "",
+    image: kotlin,
   },
   {
     name: "swift",
-    image: "",
+    image: swift,
   },
   {
     name: "kafka",
-    image: "",
+    image: kafka,
   },
   {
     name: "mongodb",
-    image: "",
+    image: mongodb,
   },
   {
     name: "postgres",
-    image: "",
+    image: postgres,
   },
   {
     name: "android",
-    image: "",
+    image: android,
   },
   {
     name: "matlab",
-    image: "",
+    image: matlab,
   },
   {
     name: "angular",
-    image: "",
+    image: angular,
   },
   {
     name: "terraform",
-    image: "",
+    image: terraform,
   },
   {
     name: "jenkins",
-    image: "",
+    image: jenkins,
   },
   {
     name: "bash",
-    image: "",
+    image: bash,
   },
   {
     name: "meteor",
-    image: "",
+    image: meteor,
   },
   {
     name: "bevy",
-    image: "",
+    image: bevy,
   },
 ];
 
