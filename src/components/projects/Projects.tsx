@@ -1,7 +1,8 @@
+import { Avatar, Chip, Grid, List, ListItem, Typography } from "@mui/material";
 import React from "react";
-import { Divider, List, ListItem, ListItemText, ThemeProvider, Typography } from "@mui/material";
-import { light } from "../../theme/light";
+
 import { Project } from "../../data/project";
+import LinkNewTab from "../link_new_tab/LinkNewTab";
 import Section from "../section/Section";
 
 interface ProjectProps {
@@ -11,8 +12,9 @@ interface ProjectProps {
 function Projects(props: ProjectProps) {
   return (
     <Section id="projects">
-      <Typography variant="h2">
-        [projects]
+      <Typography variant="h2">[projects]</Typography>
+      <Typography variant="body1">
+        I have many complete and incomplete projects.
       </Typography>
       <List>{props.projects.map((p) => project(p))}</List>
     </Section>
@@ -20,18 +22,72 @@ function Projects(props: ProjectProps) {
 }
 
 function project(p: Project) {
+  let name = <Typography variant="h3">{p.name}</Typography>;
+  if (p.link !== "") {
+    name = <LinkNewTab href={p.link}>{name}</LinkNewTab>;
+  }
+
+  let avatar = (
+    <Avatar
+      sx={{
+        height: "100px",
+        width: "100px",
+      }}
+    >
+      {p.name[0].toLowerCase()}
+    </Avatar>
+  );
+  if (p.image !== "") {
+    avatar = (
+      <Avatar
+        sx={{
+          height: "100px",
+          width: "100px",
+        }}
+        alt={p.name}
+        src={p.image}
+      />
+    );
+  }
+
   return (
     <React.Fragment key={p.name}>
       <ListItem
-        secondaryAction={
-          <ListItemText
-            primary={p.name}
-          ></ListItemText>
-        }
+        sx={{
+          marginBottom: "24px",
+        }}
       >
+        <Grid container>
+          <Grid
+            item
+            sx={{
+              marginRight: "24px",
+            }}
+          >
+            {avatar}
+          </Grid>
+          <Grid item xs={10}>
+            {name}
+            <Typography variant="h4">{p.company}</Typography>
+            {p.description.map((desc) => (
+              <Typography variant="body2">{desc}</Typography>
+            ))}
+            {p.keywords.map(kw)}
+          </Grid>
+        </Grid>
       </ListItem>
-      <Divider variant="inset" component="li"></Divider>
     </React.Fragment>
+  );
+}
+
+function kw(name: string) {
+  return (
+    <Chip
+      label={name}
+      variant="outlined"
+      key={name}
+      sx={{ marginRight: "8px" }}
+    />
   );
 }
 

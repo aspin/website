@@ -13,10 +13,11 @@ function About() {
       </Typography>
 
       <Typography variant="body1">
-        I'm currently a tech lead / engineering manager at a bloXroute Labs. I
-        lead a team of blockchain experts that focus on integrating a variety of
+        I most recently was a tech lead / engineering manager at a bloXroute Labs. I
+        led a team of blockchain experts that focus on integrating a variety of
         cross-chain (most commonly Solana and Ethereum) DeFi projects with
-        networking infrastructure powered by the BDN.
+        networking infrastructure powered by the BDN. I've since moved roles to
+        Hidden Road, and will soon need to update this blurb!
       </Typography>
 
       <Typography variant="body1">

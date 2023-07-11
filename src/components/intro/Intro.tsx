@@ -29,8 +29,8 @@ function Intro() {
               <Typography variant="h1">Kevin Chen</Typography>
               <Typography variant="h2">
                 dev @{" "}
-                <LinkNewTab href="https://bloxroute.com/">
-                  bloXroute Labs
+                <LinkNewTab href="https://hiddenroad.com/">
+                  Hidden Road
                 </LinkNewTab>
               </Typography>
               <Typography variant="h2">kevinjchen94@gmail.com</Typography>
