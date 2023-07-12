@@ -7,4 +7,4 @@ yarn build
 
 ssh root@$IP "rm -rf /www/kevinchen/*"
 scp -r dist/* root@$IP:/www/kevinchen/
-scp -r resume.pdf root@$IP:/www/kevinchen/resume.pdf
+scp -r public/* root@$IP:/www/public/
