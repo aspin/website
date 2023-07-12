@@ -51,32 +51,31 @@ function project(p: Project) {
   }
 
   return (
-    <React.Fragment key={p.name}>
-      <ListItem
-        sx={{
-          marginBottom: "24px",
-        }}
-      >
-        <Grid container>
-          <Grid
-            item
-            sx={{
-              marginRight: "24px",
-            }}
-          >
-            {avatar}
-          </Grid>
-          <Grid item xs={10}>
-            {name}
-            <Typography variant="h4">{p.company}</Typography>
-            {p.description.map((desc) => (
-              <Typography variant="body2">{desc}</Typography>
-            ))}
-            {p.keywords.map(kw)}
-          </Grid>
+    <ListItem
+      sx={{
+        marginBottom: "24px",
+      }}
+      key={p.name}
+    >
+      <Grid container>
+        <Grid
+          item
+          sx={{
+            marginRight: "24px",
+          }}
+        >
+          {avatar}
         </Grid>
-      </ListItem>
-    </React.Fragment>
+        <Grid item xs={10}>
+          {name}
+          <Typography variant="h4">{p.company}</Typography>
+          {p.description.map((desc) => (
+            <Typography variant="body2">{desc}</Typography>
+          ))}
+          {p.keywords.map(kw)}
+        </Grid>
+      </Grid>
+    </ListItem>
   );
 }
 
