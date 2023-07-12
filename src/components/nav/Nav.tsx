@@ -25,6 +25,7 @@ export default function Nav() {
       {button({}, "tech")}
       {button({}, "about")}
       {button({}, "projects")}
+      {button({}, "publications")}
     </Box>
   );
 }
