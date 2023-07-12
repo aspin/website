@@ -32,6 +32,7 @@ function project(p: Project) {
       sx={{
         height: "100px",
         width: "100px",
+        marginBottom: "1em",
       }}
     >
       {p.name[0].toLowerCase()}
@@ -43,6 +44,7 @@ function project(p: Project) {
         sx={{
           height: "100px",
           width: "100px",
+          marginBottom: "1em",
         }}
         alt={p.name}
         src={p.image}

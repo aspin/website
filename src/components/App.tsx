@@ -7,6 +7,7 @@ import { expertise, recentExpertise } from "../data/expertise";
 import projects from "../data/project";
 import publications from "../data/publication";
 import About from "./about/About";
+import Footer from "./footer/Footer";
 import Intro from "./intro/intro";
 import Projects from "./projects/Projects";
 import Publications from "./publications/Publications";
@@ -24,6 +25,7 @@ function App() {
         <Projects projects={projects} />
         <Publications publications={publications} />
       </Container>
+      <Footer />
     </React.Fragment>
   );
 }
