@@ -7,7 +7,7 @@ export interface Publication {
 const publications: Publication[] = [
   {
     citation:
-      "Kevin Chen and Haoqi Zhang. 2015. Remote Paper Prototype Testing. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI '15). ACM, New York, NY, USA, 77-80",
+      "Kevin Chen and Haoqi Zhang. 2015. Remote Paper Prototype Testing. In Proceedings of the 33rd Annual ACM Conference on Human Factors in Computing Systems (CHI '15). ACM, New York, NY, USA, 77-80.",
     paperLink: "http://dl.acm.org/citation.cfm?id=2702423",
     codeLink: "https://github.com/NUDelta/remote-paper-prototype-testing",
   },

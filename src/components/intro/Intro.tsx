@@ -45,7 +45,7 @@ function Intro() {
                   <LinkedInIcon fontSize="inherit" />
                 </LinkNewTab>
                 <LinkNewTab
-                  href="/resume.pdf"
+                  href="/public/resume.pdf"
                   sx={{
                     color: zenburnColors.subtext,
                   }}
