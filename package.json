@@ -1,0 +1,33 @@
+{
+  "name": "website",
+  "version": "2.0.0",
+  "description": "personal website",
+  "repository": "git@github.com:aspin/website.git",
+  "author": "Kevin Chen (kevinjchen94@gmail.com)",
+  "license": "MIT",
+  "private": false,
+  "scripts": {
+    "build": "parcel build src/index.html",
+    "clean": "rm -rf dist",
+    "start": "parcel src/index.html --open"
+  },
+  "devDependencies": {
+    "@trivago/prettier-plugin-sort-imports": "4.1.1",
+    "@types/react": "^17.0.0 || ^18.0.0",
+    "@types/react-dom": "18.0.11",
+    "parcel": "2.8.3",
+    "parcel-bundler": "1.12.5",
+    "prettier": "2.8.4",
+    "react": "^17.0.0 || ^18.0.0",
+    "react-dom": "18.2.0",
+    "typescript": "4.9.5"
+  },
+  "dependencies": {
+    "@emotion/react": "11.10.6",
+    "@emotion/styled": "11.10.6",
+    "@fontsource/courier-prime": "4.5.9",
+    "@fontsource/roboto": "4.5.8",
+    "@mui/icons-material": "5.11.11",
+    "@mui/material": "^5.0.0"
+  }
+}
