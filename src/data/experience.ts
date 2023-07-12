@@ -34,7 +34,7 @@ const experiences: Experience[] = [
     location: "Chicago, IL",
     description: [
       "As one of the first engineers at bloXroute, I've been " +
-        "heavily involved in the building out our entire engineering org. " +
+        "heavily involved in building out our entire engineering org. " +
         "During my time, I've built out the core infrastructure of most of our " +
         "systems and managed other developers as we've grown and started " +
         "specializing more.",

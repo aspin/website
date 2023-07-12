@@ -24,7 +24,7 @@ const projects: Project[] = [
       "decoding blockchain state.",
       "I ran the team that developed this API, which integrated with projects such " +
       "as Openbook, Jupiter, Drift, CronFi, etc. Initially, this API was built " +
-      "with a focus on Solana, but eventually expanded to cover Ethereum DApps as well. " +
+      "with a focus on Solana, but eventually expanded to cover Ethereum exchanges as well. " +
       "Aside from the API, I also created open-source SDKs in various languages, and " +
       "contributed to a number of other projects to improve Solana support.",
       "Probably the most interesting facet of this project was handling the " +

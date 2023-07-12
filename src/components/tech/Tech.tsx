@@ -38,7 +38,7 @@ function Tech(props: TechProps) {
       </Typography>
       {expertise(props.recentExpertise, filter)}
       <Typography variant="body1">
-        Some more that I've worked with in the past:
+        Some more that I've worked with in the past (or more for fun):
       </Typography>
       {expertise(props.expertise, filter)}
     </Section>
