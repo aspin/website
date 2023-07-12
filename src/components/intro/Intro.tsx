@@ -21,7 +21,8 @@ function Intro() {
         <Container
           maxWidth="md"
           sx={{
-            padding: "4em 0",
+            paddingTop: "4em",
+            paddingBottom: "4em",
           }}
         >
           <Grid container rowSpacing={6} columnSpacing={2} alignItems="center">

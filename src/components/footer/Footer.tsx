@@ -17,16 +17,19 @@ function Footer() {
         <Container
           maxWidth="md"
           sx={{
-            paddingTop: "4em",
+            paddingTop: "1em",
+            paddingBottom: "1em",
           }}
         >
-          <Grid container rowSpacing={6} columnSpacing={2} alignItems="center">
-            <Typography variant="body1">
-              You can find the source code for this website{" "}
-              <LinkNewTab href="https://github.com/aspin/website">
-                here.
-              </LinkNewTab>
-            </Typography>
+          <Grid container alignItems="center">
+            <Grid item xs={12}>
+              <Typography variant="body1">
+                You can find the source code for this website{" "}
+                <LinkNewTab href="https://github.com/aspin/website">
+                  here.
+                </LinkNewTab>
+              </Typography>
+            </Grid>
           </Grid>
         </Container>
       </Box>
