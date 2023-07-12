@@ -68,7 +68,7 @@ function project(p: Project) {
         >
           {avatar}
         </Grid>
-        <Grid item xs={10}>
+        <Grid item xs={12} sm={10}>
           {name}
           <Typography variant="h4">{p.company}</Typography>
           {p.description.map((desc) => (

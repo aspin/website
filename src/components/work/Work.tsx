@@ -32,38 +32,41 @@ function Work(props: WorkProps) {
 
 function experience(exp: Experience) {
   return (
-    <React.Fragment key={exp.company}>
-      <ListItem
-        sx={{
-          marginBottom: "24px",
-        }}
-      >
-        <Grid container>
-          <Grid
-            item
+    <ListItem
+      sx={{
+        marginBottom: "24px",
+      }}
+      key={exp.company}
+    >
+      <Grid container>
+        <Grid
+          item
+          sx={{
+            marginRight: "24px",
+          }}
+        >
+          <Avatar
+            alt={exp.company}
+            src={exp.image}
             sx={{
-              marginRight: "24px",
+              height: "100px",
+              width: "100px",
+              marginBottom: "1em",
             }}
-          >
-            <Avatar
-              alt={exp.company}
-              src={exp.image}
-              sx={{
-                height: "100px",
-                width: "100px",
-                marginBottom: "1em",
-              }}
-            />
-          </Grid>
-          <Grid item xs={10}>
-            <Typography variant="h3">{exp.title}</Typography>
-            <Typography variant="h4">{exp.company} / {exp.dates} / {exp.location}</Typography>
-            {exp.description.map(desc => <Typography variant="body2">{desc}</Typography>)}
-            {exp.tech.map(tech)}
-          </Grid>
+          />
         </Grid>
-      </ListItem>
-    </React.Fragment>
+        <Grid item xs={12} sm={10}>
+          <Typography variant="h3">{exp.title}</Typography>
+          <Typography variant="h4">
+            {exp.company} / {exp.dates} / {exp.location}
+          </Typography>
+          {exp.description.map((desc) => (
+            <Typography variant="body2">{desc}</Typography>
+          ))}
+          {exp.tech.map(tech)}
+        </Grid>
+      </Grid>
+    </ListItem>
   );
 }
 
