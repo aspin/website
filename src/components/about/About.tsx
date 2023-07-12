@@ -58,7 +58,7 @@ function About() {
           charmbracelet
         </LinkNewTab>
         ). If I have time even outside of that you can find me climbing, gaming,
-        training for a triathlon, or playing with
+        training for a triathlon, or playing with{" "}
         <LinkNewTab href="/public/quince.png">
           my dog.
         </LinkNewTab>
