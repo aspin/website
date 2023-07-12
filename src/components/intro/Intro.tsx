@@ -25,7 +25,7 @@ function Intro() {
           }}
         >
           <Grid container rowSpacing={6} columnSpacing={2} alignItems="center">
-            <Grid item xs={8}>
+            <Grid item md={8} xs={12}>
               <Typography variant="h1">Kevin Chen</Typography>
               <Typography variant="h2">
                 dev @{" "}
@@ -55,7 +55,7 @@ function Intro() {
               </Typography>
               <Nav />
             </Grid>
-            <Grid item xs={4}>
+            <Grid item md={4} xs={12}>
               <Github />
             </Grid>
           </Grid>

@@ -51,6 +51,7 @@ function experience(exp: Experience) {
               sx={{
                 height: "100px",
                 width: "100px",
+                marginBottom: "1em",
               }}
             />
           </Grid>
