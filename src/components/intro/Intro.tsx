@@ -44,9 +44,8 @@ function Intro() {
                 >
                   <LinkedInIcon fontSize="inherit" />
                 </LinkNewTab>
-                {/*// TODO: upload new CV*/}
                 <LinkNewTab
-                  href="https://www.linkedin.com/in/kevkevchen/"
+                  href="/resume.pdf"
                   sx={{
                     color: zenburnColors.subtext,
                   }}
